@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="নূর ইসলামী ব্যাংক">
+    <meta name="theme-color" content="#0d2e1a">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjogIuCmqOCnguCmsCDgpofgprjgprLgpr7gpq7gp4Ag4Ka24Kaw4KeA4Kav4Ka84Ka+IOCmrOCnjeCmr+CmvuCmguCmlSIsICJzaG9ydF9uYW1lIjogIuCmqOCnguCmsCDgpqzgp43gpq/gpr7gpoLgppUiLCAiZGVzY3JpcHRpb24iOiAi4Ka44KeB4Kam4Kau4KeB4KaV4KeN4KakIOCmh+CmuOCmsuCmvuCmruCngCDgpqzgp43gpq/gpr7gpoLgppXgpr/gpoIiLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImJhY2tncm91bmRfY29sb3IiOiAiIzBkMmUxYSIsICJ0aGVtZV9jb2xvciI6ICIjMGQyZTFhIiwgImxhbmciOiAiYm4iLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJyUzRSUzQ3JlY3Qgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnIHJ4PScyMCcgZmlsbD0nJTIzMGQyZTFhJy8lM0UlM0N0ZXh0IHk9Jy45ZW0nIGZvbnQtc2l6ZT0nODAnIHg9JzEwJyUzRSVGMCU5RiU5NSU4QyUzQy90ZXh0JTNFJTNDL3N2ZyUzRSIsICJzaXplcyI6ICJhbnkiLCAidHlwZSI6ICJpbWFnZS9zdmcreG1sIiwgInB1cnBvc2UiOiAiYW55IG1hc2thYmxlIn1dfQ==">
+    <title>নূর ইসলামী শরীয়া ব্যাংক</title>
+    <style>
+
+/* Offline Icon System */
+.fas, .far, .fab, .fal, .fad {
+    font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 1;
+}
+.fa-mosque::before { content: "🕌"; }
+.fa-home::before { content: "🏠"; }
+.fa-tachometer-alt::before { content: "📊"; }
+.fa-piggy-bank::before { content: "💰"; }
+.fa-handshake::before { content: "🤝"; }
+.fa-chart-line::before { content: "📈"; }
+.fa-user::before { content: "👤"; }
+.fa-users::before { content: "👥"; }
+.fa-user-tie::before { content: "👔"; }
+.fa-user-plus::before { content: "👤"; }
+.fa-user-tag::before { content: "🏷"; }
+.fa-sign-out-alt::before { content: "🚪"; }
+.fa-sign-in-alt::before { content: "🔐"; }
+.fa-bell::before { content: "🔔"; }
+.fa-bell-slash::before { content: "🔕"; }
+.fa-cog::before { content: "⚙"; }
+.fa-search::before { content: "🔍"; }
+.fa-plus::before { content: "+"; }
+.fa-plus-circle::before { content: "➕"; }
+.fa-times::before { content: "✕"; }
+.fa-times-circle::before { content: "✕"; }
+.fa-check::before { content: "✓"; }
+.fa-check-circle::before { content: "✅"; }
+.fa-edit::before { content: "✏"; }
+.fa-trash::before { content: "🗑"; }
+.fa-save::before { content: "💾"; }
+.fa-download::before { content: "⬇"; }
+.fa-upload::before { content: "⬆"; }
+.fa-cloud-upload-alt::before { content: "☁"; }
+.fa-bars::before { content: "☰"; }
+.fa-key::before { content: "🔑"; }
+.fa-lock::before { content: "🔒"; }
+.fa-eye::before { content: "👁"; }
+.fa-eye-slash::before { content: "🙈"; }
+.fa-envelope::before { content: "✉"; }
+.fa-phone::before { content: "📞"; }
+.fa-map-marker-alt::before { content: "📍"; }
+.fa-calendar::before { content: "📅"; }
+.fa-clock::before { content: "🕐"; }
+.fa-history::before { content: "⏱"; }
+.fa-money-bill-wave::before { content: "💸"; }
+.fa-wallet::before { content: "👛"; }
+.fa-hand-holding-usd::before { content: "💵"; }
+.fa-hand-holding-heart::before { content: "🤲"; }
+.fa-percentage::before { content: "%"; }
+.fa-calculator::before { content: "🧮"; }
+.fa-chart-bar::before { content: "📊"; }
+.fa-chart-pie::before { content: "🥧"; }
+.fa-exchange-alt::before { content: "↔"; }
+.fa-arrow-up::before { content: "↑"; }
+.fa-arrow-down::before { content: "↓"; }
+.fa-bolt::before { content: "⚡"; }
+.fa-ban::before { content: "🚫"; }
+.fa-exclamation-circle::before { content: "⚠"; }
+.fa-exclamation-triangle::before { content: "⚠"; }
+.fa-info-circle::before { content: "ℹ"; }
+.fa-comment::before { content: "💬"; }
+.fa-comment-dots::before { content: "💬"; }
+.fa-comments::before { content: "💬"; }
+.fa-paper-plane::before { content: "✈"; }
+.fa-headset::before { content: "🎧"; }
+.fa-store::before { content: "🏪"; }
+.fa-building::before { content: "🏢"; }
+.fa-industry::before { content: "🏭"; }
+.fa-book-open::before { content: "📖"; }
+.fa-file-alt::before { content: "📄"; }
+.fa-file-contract::before { content: "📋"; }
+.fa-list-ol::before { content: "📋"; }
+.fa-database::before { content: "🗄"; }
+.fa-gavel::before { content: "⚖"; }
+.fa-shield-alt::before { content: "🛡"; }
+.fa-id-card::before { content: "🪪"; }
+.fa-car::before { content: "🚗"; }
+.fa-hands-helping::before { content: "🤝"; }
+.fa-hand-holding::before { content: "🤲"; }
+
+</style>
+    <style>
+        :root {
+            --primary: #1a472a;
+            --primary-dark: #0d2e1a;
+            --primary-light: #e8f5e9;
+            --secondary: #d4af37;
+            --secondary-dark: #b8941f;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --info: #3498db;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --white: #ffffff;
+            --gray: #7f8c8d;
+            --border: #bdc3c7;
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-heavy: 0 10px 30px rgba(0,0,0,0.15);
+            --radius: 10px;
+            --radius-sm: 6px;
+            --transition: all 0.3s ease;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI','SolaimanLipi',sans-serif; }
+        body { background:linear-gradient(135deg,#f5f7fa 0%,#e4e8f0 100%); color:#2c3e50; min-height:100vh; line-height:1.6; }
+        .hidden { display:none !important; }
+        .flex { display:flex; } .flex-col { flex-direction:column; } .center { align-items:center; justify-content:center; }
+        .between { justify-content:space-between; } .gap-10 { gap:10px; } .gap-15 { gap:15px; } .gap-20 { gap:20px; }
+        .wrap { flex-wrap:wrap; } .text-center { text-align:center; } .w-100 { width:100%; }
+        .mt-10 { margin-top:10px; } .mt-20 { margin-top:20px; } .mb-10 { margin-bottom:10px; } .mb-20 { margin-bottom:20px; }
+        .p-20 { padding:20px; } .pointer { cursor:pointer; }
+        .btn { padding:12px 24px; border:none; border-radius:var(--radius-sm); cursor:pointer; font-weight:600; transition:var(--transition); display:inline-flex; align-items:center; justify-content:center; gap:8px; font-size:0.95rem; }
+        .btn-primary { background:var(--primary); color:var(--white); }
+        .btn-primary:hover { background:var(--primary-dark); transform:translateY(-2px); box-shadow:0 5px 15px rgba(26,71,42,0.3); }
+        .btn-secondary { background:var(--secondary); color:#333; }
+        .btn-secondary:hover { background:var(--secondary-dark); transform:translateY(-2px); }
+        .btn-outline { background:transparent; border:2px solid var(--primary); color:var(--primary); }
+        .btn-outline:hover { background:var(--primary); color:var(--white); }
+        .btn-success { background:var(--success); color:white; }
+        .btn-warning { background:var(--warning); color:white; }
+        .btn-danger { background:var(--danger); color:white; }
+        .btn-info { background:var(--info); color:white; }
+        .btn-sm { padding:8px 16px; font-size:0.85rem; }
+        .btn-lg { padding:16px 32px; font-size:1.1rem; }
+        .flex-1 { flex:1; }
+        .card { background:var(--white); padding:24px; border-radius:var(--radius); box-shadow:var(--shadow); transition:var(--transition); }
+        .card:hover { transform:translateY(-5px); box-shadow:var(--shadow-heavy); }
+
+        /* AUTH */
+        #auth-section { min-height:100vh; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%); padding:20px; position:relative; overflow:hidden; }
+        #auth-section::before { content:''; position:absolute; width:400px; height:400px; background:rgba(255,255,255,0.03); border-radius:50%; top:-100px; right:-100px; }
+        #auth-section::after { content:''; position:absolute; width:300px; height:300px; background:rgba(255,255,255,0.03); border-radius:50%; bottom:-80px; left:-80px; }
+        .auth-container { width:100%; max-width:480px; position:relative; z-index:1; }
+        .auth-box { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow-heavy); overflow:hidden; }
+        .auth-header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--white); padding:30px; text-align:center; }
+        .auth-logo { font-size:3rem; margin-bottom:10px; }
+        .auth-body { padding:30px; }
+        .form-group { margin-bottom:18px; }
+        .form-group label { display:block; margin-bottom:7px; font-weight:600; color:var(--dark); font-size:0.93rem; }
+        .form-control { width:100%; padding:12px 15px; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:0.97rem; transition:var(--transition); }
+        .form-control:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 3px rgba(26,71,42,0.1); }
+        .form-row { display:flex; gap:15px; }
+        .auth-footer { text-align:center; padding:18px; border-top:1px solid var(--border); background:var(--light); }
+        .auth-link { color:var(--primary); cursor:pointer; font-weight:600; text-decoration:underline; }
+
+        /* LOADING OVERLAY */
+        #loading-overlay { position:fixed; inset:0; background:var(--primary-dark); display:flex; flex-direction:column; align-items:center; justify-content:center; z-index:9999; }
+        #loading-overlay .logo { font-size:4rem; color:var(--secondary); margin-bottom:20px; animation:pulse 1.5s infinite; }
+        @keyframes pulse { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.1); opacity:0.8; } }
+        .loading-bar { width:200px; height:4px; background:rgba(255,255,255,0.2); border-radius:2px; overflow:hidden; margin-top:20px; }
+        .loading-bar-fill { height:100%; background:var(--secondary); border-radius:2px; animation:loadBar 1.8s ease forwards; }
+        @keyframes loadBar { 0% { width:0%; } 100% { width:100%; } }
+
+        /* DASHBOARD */
+        .app-container { display:flex; min-height:100vh; }
+        .sidebar { width:280px; background:var(--white); border-right:1px solid var(--border); display:flex; flex-direction:column; transition:var(--transition); box-shadow:2px 0 10px rgba(0,0,0,0.05); z-index:1000; }
+        .sidebar-header { padding:25px; background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:var(--white); text-align:center; }
+        .sidebar-logo { font-size:2.2rem; margin-bottom:8px; }
+        .sidebar-menu { flex:1; padding:15px 0; overflow-y:auto; }
+        .menu-section { padding:5px 25px 3px; font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing:1px; margin-top:10px; }
+        .menu-item { padding:12px 25px; cursor:pointer; display:flex; align-items:center; gap:12px; color:var(--dark); transition:var(--transition); border-left:4px solid transparent; margin:2px 0; position:relative; }
+        .menu-item:hover, .menu-item.active { background:var(--primary-light); color:var(--primary); border-left:4px solid var(--primary); }
+        .menu-item i { font-size:1rem; width:22px; text-align:center; }
+        .badge { background:var(--danger); color:white; padding:2px 7px; border-radius:10px; font-size:0.72rem; margin-left:auto; min-width:18px; text-align:center; }
+        .sidebar-footer { padding:18px; border-top:1px solid var(--border); background:var(--light); }
+        .user-info { display:flex; align-items:center; gap:12px; }
+        .user-avatar { width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--secondary)); color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:1.1rem; flex-shrink:0; }
+        .main-content { flex:1; overflow-y:auto; background:#f8f9fa; }
+        .top-bar { background:var(--white); padding:16px 28px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 10px rgba(0,0,0,0.05); position:sticky; top:0; z-index:900; }
+        .page-title { font-size:1.3rem; font-weight:700; color:var(--primary-dark); display:flex; align-items:center; gap:10px; }
+        .top-actions { display:flex; align-items:center; gap:18px; position:relative; }
+        .notification-btn { position:relative; cursor:pointer; font-size:1.3rem; color:var(--gray); padding:8px; border-radius:50%; transition:var(--transition); }
+        .notification-btn:hover { background:var(--primary-light); color:var(--primary); }
+        .notification-badge { position:absolute; top:0; right:0; background:var(--danger); color:white; font-size:0.68rem; padding:2px 5px; border-radius:50%; min-width:17px; text-align:center; }
+        .sync-indicator { font-size:0.78rem; color:var(--success); display:flex; align-items:center; gap:5px; transition:var(--transition); }
+
+        /* STATS */
+        .dashboard-content { padding:25px; }
+        .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-bottom:28px; }
+        .stat-card { background:var(--white); padding:22px; border-radius:var(--radius); box-shadow:var(--shadow); display:flex; align-items:center; justify-content:space-between; border-left:5px solid var(--primary); transition:var(--transition); }
+        .stat-card:hover { transform:translateY(-3px); box-shadow:var(--shadow-heavy); }
+        .stat-card.success { border-left-color:var(--success); }
+        .stat-card.warning { border-left-color:var(--warning); }
+        .stat-card.info { border-left-color:var(--info); }
+        .stat-card.secondary { border-left-color:var(--secondary); }
+        .stat-info h3 { font-size:1.8rem; color:var(--primary); margin-bottom:4px; }
+        .stat-info p { color:var(--gray); font-size:0.88rem; }
+        .stat-icon { font-size:2.3rem; color:var(--primary); opacity:0.6; }
+
+        /* SERVICES */
+        .services-container { padding:25px; }
+        .services-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:22px; margin-top:20px; }
+        .service-card { background:var(--white); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition); border-top:4px solid var(--secondary); display:flex; flex-direction:column; }
+        .service-card:hover { transform:translateY(-7px); box-shadow:var(--shadow-heavy); }
+        .service-icon { padding:22px; text-align:center; font-size:2.8rem; color:var(--secondary); background:linear-gradient(135deg,#fff9e6,#fff3cc); }
+        .service-body { padding:22px; flex:1; display:flex; flex-direction:column; }
+        .service-title { font-size:1.2rem; font-weight:700; color:var(--primary-dark); margin-bottom:8px; }
+        .service-desc { color:var(--gray); margin-bottom:14px; flex:1; line-height:1.6; font-size:0.93rem; }
+        .service-features { margin-bottom:18px; }
+        .feature-item { display:flex; align-items:center; gap:7px; margin-bottom:7px; font-size:0.88rem; }
+        .feature-item i { color:var(--success); font-size:0.8rem; }
+        .service-meta { display:flex; justify-content:space-between; background:var(--primary-light); border-radius:var(--radius-sm); padding:10px 14px; margin-bottom:14px; font-size:0.85rem; }
+
+        /* TABLE */
+        .table-container { padding:25px; }
+        .table-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; flex-wrap:wrap; gap:12px; }
+        .table-responsive { background:var(--white); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); margin-top:15px; overflow-x:auto; }
+        table { width:100%; border-collapse:collapse; min-width:600px; }
+        th,td { padding:14px 18px; text-align:left; border-bottom:1px solid var(--border); }
+        th { background:var(--primary-light); color:var(--primary); font-weight:700; font-size:0.92rem; white-space:nowrap; }
+        tr:hover { background:#f9f9f9; }
+        .status-badge { padding:5px 11px; border-radius:20px; font-size:0.82rem; font-weight:600; display:inline-block; white-space:nowrap; }
+        .status-pending { background:#fff3cd; color:#856404; }
+        .status-approved { background:#d4edda; color:#155724; }
+        .status-rejected { background:#f8d7da; color:#721c24; }
+        .status-processing { background:#cce5ff; color:#004085; }
+        .status-completed { background:#d1ecf1; color:#0c5460; }
+        .action-buttons { display:flex; gap:7px; flex-wrap:wrap; }
+
+        /* CHAT */
+        .chat-container { display:flex; height:calc(100vh - 130px); padding:20px; gap:18px; }
+        .chat-list { width:300px; background:var(--white); border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column; box-shadow:var(--shadow); }
+        .chat-window { flex:1; background:var(--white); border-radius:var(--radius); display:flex; flex-direction:column; overflow:hidden; box-shadow:var(--shadow); }
+        .chat-header { padding:18px 22px; border-bottom:1px solid var(--border); background:var(--primary-light); font-weight:700; color:var(--primary-dark); display:flex; align-items:center; gap:10px; }
+        .chat-messages { flex:1; padding:22px; overflow-y:auto; background:#f8f9fa; display:flex; flex-direction:column; gap:14px; }
+        .message { max-width:72%; padding:11px 16px; border-radius:18px; font-size:0.93rem; line-height:1.5; word-wrap:break-word; }
+        .msg-sent { align-self:flex-end; background:var(--primary); color:white; border-bottom-right-radius:5px; }
+        .msg-received { align-self:flex-start; background:var(--white); color:#333; border-bottom-left-radius:5px; box-shadow:0 2px 5px rgba(0,0,0,0.08); }
+        .message-time { font-size:0.73rem; opacity:0.7; margin-top:4px; text-align:right; }
+        .chat-input-area { padding:18px; border-top:1px solid var(--border); background:var(--white); display:flex; gap:10px; }
+        .chat-input { flex:1; padding:12px 18px; border:1px solid var(--border); border-radius:30px; outline:none; font-size:0.95rem; transition:var(--transition); }
+        .chat-input:focus { border-color:var(--primary); }
+        .chat-user-item { padding:14px 18px; cursor:pointer; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:12px; transition:var(--transition); }
+        .chat-user-item:hover, .chat-user-item.active { background:var(--primary-light); }
+
+        /* MODAL */
+        .modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.65); display:flex; align-items:center; justify-content:center; z-index:2000; padding:20px; }
+        .modal { background:var(--white); border-radius:var(--radius); width:100%; max-width:700px; max-height:90vh; overflow-y:auto; box-shadow:0 20px 50px rgba(0,0,0,0.3); animation:modalFadeIn 0.3s ease; }
+        @keyframes modalFadeIn { from { opacity:0; transform:translateY(-25px); } to { opacity:1; transform:translateY(0); } }
+        .modal-header { padding:22px 28px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; background:white; z-index:1; }
+        .modal-body { padding:28px; }
+
+        /* NOTIFICATIONS */
+        .notifications-panel { position:absolute; top:calc(100% + 10px); right:0; width:360px; background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow-heavy); border:1px solid var(--border); z-index:1000; display:none; }
+        .notifications-panel.show { display:block; animation:fadeInDown 0.25s; }
+        @keyframes fadeInDown { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+        .notifications-header { padding:18px 20px; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; }
+        .notifications-list { max-height:380px; overflow-y:auto; }
+        .notification-item { padding:15px 18px; border-bottom:1px solid var(--border); cursor:pointer; transition:var(--transition); display:flex; gap:12px; align-items:flex-start; }
+        .notification-item:hover { background:#f9f9f9; }
+        .notification-item.unread { background:#f0f7ff; }
+        .notification-dot { width:8px; height:8px; border-radius:50%; background:var(--danger); margin-top:7px; flex-shrink:0; }
+        .notification-content { flex:1; }
+        .notification-title { font-weight:600; color:var(--dark); margin-bottom:3px; font-size:0.92rem; }
+        .notification-message { font-size:0.87rem; color:var(--gray); margin-bottom:3px; }
+        .notification-time { font-size:0.78rem; color:var(--gray); }
+
+        /* SPECIAL */
+        .sharia-badge { background:linear-gradient(135deg,var(--success),#27ae60); color:white; padding:4px 11px; border-radius:20px; font-size:0.78rem; font-weight:600; display:inline-flex; align-items:center; gap:5px; }
+        .welcome-banner { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); color:white; padding:28px; border-radius:var(--radius); margin-bottom:22px; display:flex; justify-content:space-between; align-items:center; position:relative; overflow:hidden; }
+        .welcome-banner::after { content:''; position:absolute; right:80px; font-size:8rem; opacity:0.05; font-family:'Font Awesome 6 Free'; font-weight:900; }
+        .toast-container { position:fixed; bottom:20px; right:20px; z-index:3000; display:flex; flex-direction:column; gap:10px; }
+        .toast { background:var(--white); color:#333; padding:14px 20px; border-radius:var(--radius); box-shadow:var(--shadow-heavy); border-left:5px solid var(--primary); animation:slideInRight 0.3s ease; display:flex; align-items:center; gap:13px; max-width:340px; }
+        .toast.success { border-left-color:var(--success); }
+        .toast.error { border-left-color:var(--danger); }
+        .toast.warning { border-left-color:var(--warning); }
+        .toast.info { border-left-color:var(--info); }
+        @keyframes slideInRight { from { transform:translateX(100%); opacity:0; } to { transform:translateX(0); opacity:1; } }
+        .loading-spinner { display:inline-block; width:18px; height:18px; border:3px solid rgba(26,71,42,0.3); border-radius:50%; border-top-color:var(--primary); animation:spin 1s linear infinite; }
+        @keyframes spin { to { transform:rotate(360deg); } }
+        .mobile-menu-btn { display:none; font-size:1.5rem; cursor:pointer; color:var(--primary); padding:8px; border-radius:5px; }
+        .mobile-menu-btn:hover { background:var(--primary-light); }
+
+        /* PROFILE/ACCOUNT */
+        .profile-header { background:linear-gradient(135deg,var(--primary),var(--primary-dark)); border-radius:var(--radius); padding:30px; color:white; display:flex; align-items:center; gap:25px; margin-bottom:25px; }
+        .profile-avatar { width:80px; height:80px; border-radius:50%; background:rgba(255,255,255,0.2); border:3px solid var(--secondary); display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:bold; }
+        .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+        .info-item { background:#f8f9fa; border-radius:var(--radius-sm); padding:14px; }
+        .info-label { font-size:0.82rem; color:var(--gray); margin-bottom:4px; }
+        .info-value { font-weight:600; color:var(--dark); }
+
+        /* CHARTS/REPORTS */
+        .chart-bar { height:24px; border-radius:12px; background:linear-gradient(90deg,var(--primary),var(--secondary)); transition:width 1s ease; }
+        .progress-bar { background:#eee; border-radius:12px; overflow:hidden; margin-bottom:8px; }
+
+        /* FILTER BAR */
+        .filter-bar { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+        .filter-btn { padding:8px 16px; border:2px solid var(--border); background:white; border-radius:20px; cursor:pointer; font-size:0.88rem; transition:var(--transition); }
+        .filter-btn:hover, .filter-btn.active { border-color:var(--primary); background:var(--primary); color:white; }
+
+        /* TIMELINE */
+        .timeline { position:relative; padding-left:25px; }
+        .timeline::before { content:''; position:absolute; left:8px; top:0; bottom:0; width:2px; background:var(--border); }
+        .timeline-item { position:relative; margin-bottom:20px; }
+        .timeline-dot { position:absolute; left:-21px; width:14px; height:14px; border-radius:50%; background:var(--primary); border:2px solid white; box-shadow:0 0 0 2px var(--primary); top:4px; }
+        .timeline-dot.success { background:var(--success); box-shadow:0 0 0 2px var(--success); }
+        .timeline-dot.warning { background:var(--warning); box-shadow:0 0 0 2px var(--warning); }
+        .timeline-dot.danger { background:var(--danger); box-shadow:0 0 0 2px var(--danger); }
+        .timeline-content { background:white; padding:14px 18px; border-radius:var(--radius-sm); box-shadow:var(--shadow); }
+
+        /* CALCULATOR */
+        .calc-result { background:linear-gradient(135deg,var(--primary-light),#e8f5e9); border-radius:var(--radius); padding:20px; margin-top:20px; }
+
+        /* RESPONSIVE */
+        @media (max-width:768px) {
+            .sidebar { position:fixed; left:-280px; height:100%; box-shadow:2px 0 15px rgba(0,0,0,0.2); }
+            .sidebar.open { left:0; }
+            .mobile-menu-btn { display:block; }
+            .chat-container { flex-direction:column; height:auto; }
+            .chat-list { width:100%; height:250px; }
+            .chat-window { height:450px; }
+            .services-grid { grid-template-columns:1fr; }
+            .stats-grid { grid-template-columns:1fr; }
+            .form-row { flex-direction:column; gap:0; }
+            .welcome-banner { flex-direction:column; text-align:center; gap:18px; }
+            .info-grid { grid-template-columns:1fr; }
+            .table-header { flex-direction:column; align-items:flex-start; }
+        }
+    </style>
+</head>
+<body>
+<div id="toast-container" class="toast-container"></div>
+
+<!-- LOADING -->
+<div id="loading-overlay">
+    <div class="logo"><i class="fas fa-mosque"></i></div>
+    <h2 style="color:white;margin-bottom:5px;">নূর ইসলামী শরীয়া ব্যাংক</h2>
+    <p style="color:rgba(255,255,255,0.6);font-size:0.9rem;">সুদমুক্ত ব্যাংকিং ব্যবস্থা</p>
+    <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+</div>
+
+<!-- AUTH -->
+<section id="auth-section" class="hidden">
+    <div class="auth-container">
+        <!-- LOGIN -->
+        <div id="login-form" class="auth-box">
+            <div class="auth-header">
+                <div class="auth-logo"><i class="fas fa-mosque"></i></div>
+                <h2>নূর ইসলামী শরীয়া ব্যাংক</h2>
+                <p>সুদমুক্ত ব্যাংকিং ব্যবস্থা</p>
+            </div>
+            <div class="auth-body">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> ইউজার আইডি / NID / ইমেইল</label>
+                    <input type="text" id="login-userid" class="form-control" placeholder="ইউজার আইডি বা NID নম্বর">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> পাসওয়ার্ড</label>
+                    <div style="position:relative;">
+                        <input type="password" id="login-password" class="form-control" placeholder="পাসওয়ার্ড লিখুন" style="padding-right:45px;">
+                        <i class="fas fa-eye" onclick="togglePasswordVisibility('login-password',this)" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--gray);"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-shield-alt"></i> নিরাপত্তা কোড</label>
+                    <div class="form-row">
+                        <input type="text" id="login-captcha" class="form-control" placeholder="কোড লিখুন">
+                        <div id="captcha-code" onclick="generateCaptcha()" class="form-control" style="background:#f8f9fa;font-family:monospace;font-size:1.3rem;letter-spacing:4px;text-align:center;cursor:pointer;color:var(--primary-dark);font-weight:bold;">A3B7</div>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100" onclick="handleLogin()">
+                    <i class="fas fa-sign-in-alt"></i> লগইন করুন
+                </button>
+                <div style="text-align:center;margin-top:15px;">
+                    <span class="auth-link" onclick="showForgotPassword()">পাসওয়ার্ড ভুলে গেছেন?</span>
+                </div>
+            </div>
+            <div class="auth-footer">
+                <p>একাউন্ট নেই? <span class="auth-link" onclick="showRegisterForm()">রেজিস্ট্রেশন করুন</span></p>
+            </div>
+        </div>
+
+        <!-- REGISTER -->
+        <div id="register-form" class="auth-box hidden">
+            <div class="auth-header">
+                <div class="auth-logo"><i class="fas fa-user-plus"></i></div>
+                <h2>নতুন একাউন্ট খুলুন</h2>
+                <p>শরীয়া ব্যাংকিংয়ে অংশগ্রহণ করুন</p>
+            </div>
+            <div class="auth-body">
+                <div class="form-row">
+                    <div class="form-group" style="flex:2;">
+                        <label><i class="fas fa-user"></i> পুরো নাম</label>
+                        <input type="text" id="reg-name" class="form-control" placeholder="আপনার পূর্ণ নাম">
+                    </div>
+                    <div class="form-group" style="flex:1;">
+                        <label><i class="fas fa-user-tag"></i> উপাধি</label>
+                        <select id="reg-title" class="form-control">
+                            <option value="">নির্বাচন</option>
+                            <option value="জনাব">জনাব</option>
+                            <option value="জনাবা">জনাবা</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-id-card"></i> জাতীয় পরিচয়পত্র নম্বর (NID)</label>
+                    <input type="text" id="reg-nid" class="form-control" placeholder="১০ বা ১৭ ডিজিটের NID নম্বর">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> ইমেইল</label>
+                        <input type="email" id="reg-email" class="form-control" placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> মোবাইল</label>
+                        <input type="tel" id="reg-phone" class="form-control" placeholder="০১XXXXXXXXX">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-user-tag"></i> একাউন্টের ধরন</label>
+                    <select id="reg-type" class="form-control">
+                        <option value="">নির্বাচন করুন</option>
+                        <option value="personal">ব্যক্তিগত সঞ্চয়</option>
+                        <option value="business">ব্যবসায়ী বিনিয়োগ</option>
+                        <option value="corporate">কর্পোরেট বিনিয়োগ</option>
+                        <option value="student">ছাত্র আমানত</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> পাসওয়ার্ড</label>
+                        <input type="password" id="reg-password" class="form-control" placeholder="শক্তিশালী পাসওয়ার্ড" onkeyup="checkPasswordStrength(this.value)">
+                        <div style="margin-top:5px;height:4px;background:#eee;border-radius:2px;overflow:hidden;">
+                            <div id="password-strength-bar" style="height:100%;width:0%;background:#e74c3c;transition:width 0.3s;"></div>
+                        </div>
+                        <small style="color:var(--gray);font-size:0.78rem;">কমপক্ষে ৮ অক্ষর, সংখ্যা ও বড় হাতের অক্ষর</small>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> পাসওয়ার্ড নিশ্চিত</label>
+                        <input type="password" id="reg-confirm-password" class="form-control" placeholder="পুনরায় পাসওয়ার্ড">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> জন্ম তারিখ</label>
+                        <input type="date" id="reg-dob" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-industry"></i> পেশা</label>
+                        <select id="reg-occupation" class="form-control">
+                            <option value="">নির্বাচন</option>
+                            <option value="সরকারি চাকরি">সরকারি চাকরি</option>
+                            <option value="বেসরকারি চাকরি">বেসরকারি চাকরি</option>
+                            <option value="ব্যবসা">ব্যবসা</option>
+                            <option value="শিক্ষার্থী">শিক্ষার্থী</option>
+                            <option value="গৃহিণী">গৃহিণী</option>
+                            <option value="অবসরপ্রাপ্ত">অবসরপ্রাপ্ত</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-map-marker-alt"></i> বর্তমান ঠিকানা</label>
+                    <textarea id="reg-address" class="form-control" rows="2" placeholder="পূর্ণ ঠিকানা"></textarea>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-money-bill-wave"></i> মাসিক আয় (টাকা)</label>
+                    <input type="number" id="reg-income" class="form-control" placeholder="মাসিক আয়" min="0">
+                </div>
+                <div class="form-group">
+                    <div style="display:flex;align-items:flex-start;gap:10px;">
+                        <input type="checkbox" id="reg-terms" style="margin-top:3px;">
+                        <label for="reg-terms" style="font-size:0.9rem;margin:0;">
+                            আমি <span class="auth-link" onclick="showTermsModal()">শর্তাবলী ও গোপনীয়তা নীতি</span> পড়েছি এবং মেনে চলতে সম্মত
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-secondary w-100" onclick="handleRegister()">
+                    <i class="fas fa-user-plus"></i> রেজিস্ট্রেশন সম্পন্ন করুন
+                </button>
+            </div>
+            <div class="auth-footer">
+                <p>একাউন্ট আছে? <span class="auth-link" onclick="showLoginForm()">লগইন করুন</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAIN APP -->
+<section id="app-section" class="app-container hidden">
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo"><i class="fas fa-mosque"></i></div>
+            <h3>নূর ইসলামী ব্যাংক</h3>
+            <p style="font-size:0.82rem;opacity:0.8;">শরীয়া সম্মত ব্যাংকিং</p>
+        </div>
+        <div class="sidebar-menu" id="menu-container"></div>
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <div class="user-avatar" id="user-avatar">আ</div>
+                <div style="flex:1;min-width:0;">
+                    <div id="sidebar-username" style="font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">ব্যবহারকারী</div>
+                    <div id="sidebar-usertype" style="font-size:0.82rem;color:var(--gray);">গ্রাহক</div>
+                </div>
+            </div>
+            <button class="btn btn-outline w-100 mt-10" onclick="logout()" style="font-size:0.88rem;padding:9px;">
+                <i class="fas fa-sign-out-alt"></i> লগআউট
+            </button>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="top-bar">
+            <div class="flex center gap-15">
+                <div class="mobile-menu-btn" onclick="toggleSidebar()"><i class="fas fa-bars"></i></div>
+                <div class="page-title" id="page-title"><i class="fas fa-home"></i> <span>ড্যাশবোর্ড</span></div>
+            </div>
+            <div class="top-actions">
+                <div class="sync-indicator hidden" id="sync-indicator"><i class="fas fa-cloud-upload-alt"></i> <span>সংরক্ষিত</span></div>
+                <div class="notification-btn" onclick="toggleNotifications()">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge hidden" id="notification-badge">0</span>
+                </div>
+                <div class="notifications-panel" id="notifications-panel">
+                    <div class="notifications-header">
+                        <h4><i class="fas fa-bell"></i> নোটিফিকেশন</h4>
+                        <span class="auth-link" onclick="markAllNotificationsRead()" style="font-size:0.85rem;">সব পড়া</span>
+                    </div>
+                    <div class="notifications-list" id="notifications-list"></div>
+                </div>
+            </div>
+        </div>
+        <div id="content-area"></div>
+    </main>
+</section>
+
+<!-- MODALS -->
+<div id="service-modal" class="modal-overlay hidden">
+    <div class="modal">
+        <div class="modal-header">
+            <h3 id="modal-title">বিস্তারিত</h3>
+            <button onclick="closeModal()" class="btn btn-sm btn-outline"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+    </div>
+</div>
+
+<div id="sharia-advice-modal" class="modal-overlay hidden">
+    <div class="modal" style="max-width:780px;">
+        <div class="modal-header">
+            <h3><i class="fas fa-hands-helping"></i> শরীয়া পরামর্শ কেন্দ্র</h3>
+            <button onclick="closeShariaAdviceModal()" class="btn btn-sm btn-outline"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <div style="display:flex;flex-direction:column;height:480px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);">
+                <div class="chat-header"><i class="fas fa-user-tie"></i> শরীয়া বিশেষজ্ঞের সাথে কথা বলুন <span style="margin-left:auto;font-size:0.78rem;font-weight:400;opacity:0.7;">AI পরিচালিত পরামর্শ</span></div>
+                <div class="chat-messages" id="sharia-chat-messages">
+                    <div class="message msg-received">
+                        <div>আসসালামু আলাইকুম ওয়া রাহমাতুল্লাহ। আমি নূর ইসলামী ব্যাংকের শরীয়া পরামর্শক। আপনার ইসলামী ব্যাংকিং বিষয়ক যেকোনো প্রশ্ন করুন।</div>
+                        <div class="message-time">শরীয়া পরামর্শক</div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="sharia-chat-input" class="chat-input" placeholder="শরীয়া বিষয়ক প্রশ্ন লিখুন..." onkeypress="if(event.key==='Enter')sendShariaMessage()">
+                    <button class="btn btn-primary" onclick="sendShariaMessage()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="terms-modal" class="modal-overlay hidden">
+    <div class="modal" style="max-width:780px;">
+        <div class="modal-header">
+            <h3><i class="fas fa-file-contract"></i> শর্তাবলী ও গোপনীয়তা নীতি</h3>
+            <button onclick="closeTermsModal()" class="btn btn-sm btn-outline"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <div style="max-height:420px;overflow-y:auto;padding-right:8px;">
+                <div style="background:var(--primary-light);border-radius:var(--radius-sm);padding:15px;margin-bottom:20px;">
+                    <h4 style="color:var(--primary-dark);">🕌 ইসলামী শরীয়া নীতিমালা</h4>
+                </div>
+                <p>১. নূর ইসলামী শরীয়া ব্যাংক সুদ (রিবা) সম্পূর্ণ নিষিদ্ধ করে।</p>
+                <p>২. সকল লেনদেন শরীয়া সুপারভাইজরি বোর্ড কর্তৃক অনুমোদিত।</p>
+                <p>৩. বিনিয়োগে মুশারাকা (লাভ-ক্ষতি অংশীদারিত্ব) পদ্ধতি অনুসরণ।</p>
+                <p>৪. ঋণে কার্দে হাসানা (বিনা সুদে ঋণ) পদ্ধতি।</p>
+                <h4 style="margin-top:20px;color:var(--primary-dark);">🔐 গোপনীয়তা নীতি</h4>
+                <p>১. আপনার ব্যক্তিগত তথ্য এন্ড-টু-এন্ড এনক্রিপ্টেড।</p>
+                <p>২. তৃতীয় পক্ষের সাথে তথ্য কখনো শেয়ার করা হবে না।</p>
+                <p>৩. আপনি যেকোনো সময় আপনার ডেটা মুছে ফেলতে পারবেন।</p>
+                <p>৪. সকল লগ তথ্য ৩০ দিন পর স্বয়ংক্রিয়ভাবে মুছে যাবে।</p>
+                <h4 style="margin-top:20px;color:var(--primary-dark);">📋 ব্যবহারকারীর দায়িত্ব</h4>
+                <p>১. সমস্ত তথ্য সঠিক ও নির্ভুলভাবে প্রদান করতে হবে।</p>
+                <p>২. শক্তিশালী পাসওয়ার্ড ব্যবহার এবং নিয়মিত পরিবর্তন করতে হবে।</p>
+                <p>৩. কোনো অবৈধ কার্যকলাপে অংশগ্রহণ সম্পূর্ণ নিষিদ্ধ।</p>
+                <div class="text-center mt-20">
+                    <button class="btn btn-primary" onclick="closeTermsModal()"><i class="fas fa-check"></i> পড়েছি ও সম্মত</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="calc-modal" class="modal-overlay hidden">
+    <div class="modal" style="max-width:600px;">
+        <div class="modal-header">
+            <h3><i class="fas fa-calculator"></i> মুনাফা ক্যালকুলেটর</h3>
+            <button onclick="document.getElementById('calc-modal').classList.add('hidden')" class="btn btn-sm btn-outline"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>বিনিয়োগের পরিমাণ (৳)</label>
+                <input type="number" id="calc-amount" class="form-control" placeholder="বিনিয়োগের পরিমাণ" oninput="calculateProfit()">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>মুনাফার হার (%)</label>
+                    <input type="number" id="calc-rate" class="form-control" value="8" step="0.5" oninput="calculateProfit()">
+                </div>
+                <div class="form-group">
+                    <label>মেয়াদ (বছর)</label>
+                    <input type="number" id="calc-years" class="form-control" value="3" min="1" max="30" oninput="calculateProfit()">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>মুনাফার ধরন</label>
+                <select id="calc-type" class="form-control" onchange="calculateProfit()">
+                    <option value="simple">সরল মুনাফা (মুরাবাহা)</option>
+                    <option value="compound">চক্রবৃদ্ধি মুনাফা (মুদারাবা)</option>
+                </select>
+            </div>
+            <div class="calc-result" id="calc-result" style="display:none;">
+                <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;">
+                    <div style="text-align:center;">
+                        <div style="font-size:0.85rem;color:var(--gray);">মূল বিনিয়োগ</div>
+                        <div style="font-size:1.4rem;font-weight:700;color:var(--primary);" id="calc-principal">৳০</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div style="font-size:0.85rem;color:var(--gray);">মোট মুনাফা</div>
+                        <div style="font-size:1.4rem;font-weight:700;color:var(--success);" id="calc-profit">৳০</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div style="font-size:0.85rem;color:var(--gray);">মোট মূল্য</div>
+                        <div style="font-size:1.4rem;font-weight:700;color:var(--secondary);" id="calc-total">৳০</div>
+                    </div>
+                </div>
+                <div style="margin-top:15px;font-size:0.85rem;color:var(--gray);text-align:center;">
+                    <i class="fas fa-info-circle"></i> এটি একটি আনুমানিক হিসাব। প্রকৃত মুনাফা বাজার পরিস্থিতির উপর নির্ভরশীল।
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// ========== STATE ==========
+let currentUser = null;
+let activeChatWith = null;
+let captchaValue = '';
+let dbCache = null;
+
+// ========== PERSISTENT STORAGE ==========
+const DB_KEY = 'nur_islamic_bank_v3';
+
+async function storageGet(key) {
+    if (window.storage) {
+        try {
+            const r = await window.storage.get(key);
+            return r ? r.value : null;
+        } catch(e) { return null; }
+    }
+    return localStorage.getItem(key);
+}
+
+async function storageSet(key, value) {
+    if (window.storage) {
+        try {
+            await window.storage.set(key, value);
+            return true;
+        } catch(e) { return false; }
+    }
+    localStorage.setItem(key, value);
+    return true;
+}
+
+// ========== DATABASE ==========
+const IslamicBankSystem = {
+    getDefaultData() {
+        return {
+            version: 3,
+            users: [
+                { id:'admin', nid:'admin', password:'Admin@123', name:'সিস্টেম অ্যাডমিন', email:'admin@nurislamicbank.com', phone:'০১৬২৩৭', type:'admin', balance:0, joined:new Date().toLocaleDateString('bn-BD'), status:'active', address:'বায়তুল মোকাররম, ঢাকা', occupation:'সিস্টেম অ্যাডমিন', monthlyIncome:0 },
+                { id:'user_1001', nid:'1234567890123', password:'User@123', name:'আব্দুল্লাহ আল মামুন', email:'mamun@example.com', phone:'০১৭১১২২৩৩৪৪', type:'personal', balance:50000, joined:'২০২৩-০১-১৫', status:'active', address:'মিরপুর, ঢাকা', occupation:'সফটওয়্যার ইঞ্জিনিয়ার', monthlyIncome:80000 }
+            ],
+            services: [
+                { id:'mudarabah_savings', name:'মুদারাবা সঞ্চয় আমানত', description:'লাভ-ক্ষতি অংশীদারিত্বের ভিত্তিতে ইসলামী সঞ্চয় স্কিম। ব্যাংক ও গ্রাহক নির্ধারিত হারে লাভ ভাগাভাগি করবে।', type:'savings', category:'আমানত', minAmount:1000, maxAmount:10000000, profitRate:'৭-৯%', duration:'১-১০ বছর', features:['সুদমুক্ত লাভ','মাসিক মুনাফা','জরুরী উত্তোলন','কর ছাড়'], icon:'fas fa-piggy-bank' },
+                { id:'musharakah_business', name:'মুশারাকা ব্যবসায়িক বিনিয়োগ', description:'যৌথ মূলধনে শরীয়া সম্মত ব্যবসায়িক বিনিয়োগ। লাভ-ক্ষতি অংশীদারিত্বের ভিত্তিতে পরিচালিত।', type:'investment', category:'বিনিয়োগ', minAmount:50000, maxAmount:50000000, profitRate:'১২-১৮%', duration:'৩-১০ বছর', features:['যৌথ বিনিয়োগ','লাভ-ক্ষতি ভাগাভাগি','ব্যবসায়িক পরামর্শ','নিয়মিত রিপোর্ট'], icon:'fas fa-handshake' },
+                { id:'murabaha_home', name:'মুরাবাহা হোম ফাইন্যান্স', description:'সম্পত্তি ক্রয়-বিক্রয়ের মাধ্যমে ইসলামী হাউজিং ফাইন্যান্স।', type:'finance', category:'ফাইন্যান্স', minAmount:500000, maxAmount:50000000, profitRate:'৯-১২%', duration:'৫-২০ বছর', features:['সুদমুক্ত ফাইন্যান্সিং','দীর্ঘমেয়াদী কিস্তি','সম্পত্তি বীমা','অগ্রিম পরিশোধ'], icon:'fas fa-home' },
+                { id:'ijarah_vehicle', name:'ইজারা গাড়ি ফাইন্যান্স', description:'লিজিংয়ের মাধ্যমে ইসলামী গাড়ি ফাইন্যান্স।', type:'finance', category:'ফাইন্যান্স', minAmount:300000, maxAmount:5000000, profitRate:'১০-১৪%', duration:'৩-৭ বছর', features:['সুদমুক্ত লিজিং','বিভিন্ন মডেল','বীমা সুবিধা','মেরামত সহায়তা'], icon:'fas fa-car' },
+                { id:'qard_hasan', name:'কার্দে হাসানা (বিনা সুদে ঋণ)', description:'বিনা সুদে জরুরী প্রয়োজনে ইসলামী ঋণ সুবিধা।', type:'loan', category:'ঋণ', minAmount:10000, maxAmount:500000, profitRate:'০%', duration:'৬-২৪ মাস', features:['বিনা সুদে ঋণ','সহজ শর্ত','দ্রুত প্রক্রিয়াকরণ','নমনীয় মেয়াদ'], icon:'fas fa-hand-holding-heart' },
+                { id:'wakala_investment', name:'ওয়াকালা বিনিয়োগ ব্যবস্থাপনা', description:'ব্যাংক গ্রাহকের পক্ষে পেশাদার বিনিয়োগ ব্যবস্থাপনা করে।', type:'investment', category:'বিনিয়োগ', minAmount:100000, maxAmount:10000000, profitRate:'৮-১৫%', duration:'২-৭ বছর', features:['পেশাদার ব্যবস্থাপনা','বিভিন্ন পোর্টফোলিও','নিয়মিত আপডেট','ঝুঁকি ব্যবস্থাপনা'], icon:'fas fa-chart-line' },
+                { id:'sukuk_bond', name:'সুকুক ইসলামী বন্ড', description:'শরীয়া সম্মত সম্পদ ভিত্তিক ইসলামী বন্ড।', type:'investment', category:'বিনিয়োগ', minAmount:50000, maxAmount:10000000, profitRate:'৯-১১%', duration:'৩-১০ বছর', features:['সম্পদ ভিত্তিক বন্ড','নিয়মিত আয়','কর্পোরেট সুবিধা','বাজারজাতযোগ্য'], icon:'fas fa-file-contract' },
+                { id:'takaful_insurance', name:'তাকাফুল ইসলামী বীমা', description:'পারস্পরিক সহযোগিতার ভিত্তিতে ইসলামী বীমা সুবিধা।', type:'insurance', category:'বীমা', minAmount:5000, maxAmount:1000000, profitRate:'ভেরিয়েবল', duration:'১-২০ বছর', features:['পারস্পরিক সহযোগিতা','সুদমুক্ত','বিভিন্ন কভারেজ','লাভ বণ্টন'], icon:'fas fa-shield-alt' }
+            ],
+            applications: [{ id:1001, userId:'user_1001', userName:'আব্দুল্লাহ আল মামুন', userType:'personal', serviceId:'mudarabah_savings', serviceName:'মুদারাবা সঞ্চয় আমানত', amount:50000, duration:'৩ বছর', purpose:'বাড়ি নির্মাণের সঞ্চয়', status:'approved', appliedDate:'২০২৩-০২-১০', approvedDate:'২০২৩-০২-১৫', approvedBy:'সিস্টেম অ্যাডমিন', shariaReview:true, reviewComment:'শরীয়া সম্মত আবেদন, অনুমোদিত' }],
+            transactions: [{ id:5001, userId:'user_1001', type:'deposit', amount:50000, description:'মুদারাবা সঞ্চয় আমানত', date:new Date().toLocaleString('bn-BD'), status:'completed', balance:50000 }],
+            messages: [
+                { id:2001, from:'user_1001', to:'admin', text:'আমার মুদারাবা সঞ্চয়ের লাভ কখন পাবো?', timestamp:'২০২৩-০২-১২ ১০:১৫', read:true },
+                { id:2002, from:'admin', to:'user_1001', text:'প্রতি মাসের ১০ তারিখে লাভ যোগ করা হয়।', timestamp:'২০২৩-০২-১২ ১০:৩০', read:true }
+            ],
+            notifications: [{ id:3001, userId:'admin', title:'নতুন আবেদন', message:'আব্দুল্লাহ আল মামুন মুদারাবা সঞ্চয়ের জন্য আবেদন করেছেন', type:'application', timestamp:'২০২৩-০২-১০ ১১:৩০', read:true }],
+            settings: { bankName:'নূর ইসলামী শরীয়া ব্যাংক', supportEmail:'support@nurislamicbank.com', contactNumber:'১৬২৩৭', address:'বায়তুল মোকাররম, ঢাকা', workingHours:'শনিবার-বৃহস্পতিবার: সকাল ৯টা - বিকাল ৫টা', prayerBreak:'জুমার নামায: দুপুর ১২:৩০ - ২:৩০' }
+        };
+    },
+
+    async load() {
+        if (dbCache) return dbCache;
+        const data = await storageGet(DB_KEY);
+        if (data) {
+            try { dbCache = JSON.parse(data); return dbCache; }
+            catch(e) {}
+        }
+        dbCache = this.getDefaultData();
+        await this.save(dbCache);
+        return dbCache;
+    },
+
+    async save(data) {
+        dbCache = data;
+        const ok = await storageSet(DB_KEY, JSON.stringify(data));
+        if (ok) showSyncIndicator();
+        return ok;
+    },
+
+    findUser(identifier, password = null) {
+        if (!dbCache) return null;
+        const u = dbCache.users.find(u =>
+            (u.id === identifier || u.nid === identifier || u.email === identifier)
+        );
+        if (!u) return null;
+        if (password && u.password !== password) return null;
+        return u;
+    },
+
+    async addNotification(userId, title, message, type = 'info') {
+        const db = await this.load();
+        const notif = { id:Date.now(), userId, title, message, type, timestamp:new Date().toLocaleString('bn-BD'), read:false };
+        db.notifications.push(notif);
+        await this.save(db);
+        if (currentUser && currentUser.id === userId) updateNotificationCount();
+        return notif;
+    },
+
+    async addApplication(app) {
+        const db = await this.load();
+        app.id = Date.now();
+        app.status = 'pending';
+        app.appliedDate = new Date().toLocaleString('bn-BD');
+        db.applications.push(app);
+        await this.save(db);
+        await this.addNotification('admin','নতুন আবেদন',`${app.userName} - ${app.serviceName}`,'application');
+        await this.addNotification(app.userId,'আবেদন জমা',`আপনার ${app.serviceName} আবেদন জমা হয়েছে`,'success');
+        return app;
+    },
+
+    async addMessage(from, to, text) {
+        const db = await this.load();
+        const msg = { id:Date.now(), from, to, text, timestamp:new Date().toLocaleString('bn-BD'), read:false };
+        db.messages.push(msg);
+        await this.save(db);
+        if (to !== from) {
+            const fromUser = this.findUser(from);
+            await this.addNotification(to,'নতুন বার্তা',`${fromUser?.name||'কেউ'} বার্তা পাঠিয়েছেন`,'message');
+        }
+        return msg;
+    },
+
+    async addTransaction(txn) {
+        const db = await this.load();
+        txn.id = Date.now();
+        txn.date = new Date().toLocaleString('bn-BD');
+        txn.status = txn.status || 'completed';
+        const user = db.users.find(u => u.id === txn.userId);
+        txn.balance = user ? (user.balance || 0) : 0;
+        db.transactions.push(txn);
+        await this.save(db);
+        return txn;
+    }
+};
+
+// ========== UTILS ==========
+function formatMoney(n) {
+    return Number(n||0).toLocaleString('bn-BD');
+}
+function getUserTypeText(t) {
+    return { personal:'ব্যক্তিগত', business:'ব্যবসায়ী', corporate:'কর্পোরেট', student:'ছাত্র', admin:'অ্যাডমিন' }[t] || t;
+}
+function showToast(msg, type='info') {
+    const icons = { success:'fas fa-check-circle', error:'fas fa-times-circle', warning:'fas fa-exclamation-triangle', info:'fas fa-info-circle' };
+    const colors = { success:'#27ae60', error:'#e74c3c', warning:'#f39c12', info:'#3498db' };
+    const c = document.getElementById('toast-container');
+    const d = document.createElement('div');
+    d.className = `toast ${type}`;
+    d.innerHTML = `<i class="${icons[type]}" style="color:${colors[type]};font-size:1.2rem;"></i><span>${msg}</span>`;
+    c.appendChild(d);
+    setTimeout(() => { d.style.opacity='0'; d.style.transform='translateX(100%)'; d.style.transition='all 0.3s'; setTimeout(() => d.remove(), 300); }, 3200);
+}
+function showSyncIndicator() {
+    const el = document.getElementById('sync-indicator');
+    if (!el) return;
+    el.classList.remove('hidden');
+    setTimeout(() => el.classList.add('hidden'), 2500);
+}
+function generateCaptcha() {
+    const c = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    captchaValue = Array.from({length:4}, () => c[Math.floor(Math.random()*c.length)]).join('');
+    const el = document.getElementById('captcha-code');
+    if (el) el.textContent = captchaValue;
+}
+function togglePasswordVisibility(id, icon) {
+    const inp = document.getElementById(id);
+    if (inp.type === 'password') { inp.type = 'text'; icon.className = 'fas fa-eye-slash'; }
+    else { inp.type = 'password'; icon.className = 'fas fa-eye'; }
+}
+function checkPasswordStrength(v) {
+    let s = 0;
+    if (v.length >= 8) s++;
+    if (/[A-Z]/.test(v)) s++;
+    if (/[0-9]/.test(v)) s++;
+    if (/[^A-Za-z0-9]/.test(v)) s++;
+    const bar = document.getElementById('password-strength-bar');
+    if (!bar) return;
+    const w = ['0%','30%','55%','80%','100%'][s];
+    const clr = ['#e74c3c','#e74c3c','#f39c12','#3498db','#27ae60'][s];
+    bar.style.width = w; bar.style.background = clr;
+}
+
+// ========== AUTH ==========
+function showLoginForm() {
+    document.getElementById('login-form').classList.remove('hidden');
+    document.getElementById('register-form').classList.add('hidden');
+    generateCaptcha();
+}
+function showRegisterForm() {
+    document.getElementById('register-form').classList.remove('hidden');
+    document.getElementById('login-form').classList.add('hidden');
+}
+function showTermsModal() { document.getElementById('terms-modal').classList.remove('hidden'); }
+function closeTermsModal() { document.getElementById('terms-modal').classList.add('hidden'); }
+function showForgotPassword() {
+    document.getElementById('modal-title').textContent = 'পাসওয়ার্ড রিসেট';
+    document.getElementById('modal-body').innerHTML = `
+        <p style="margin-bottom:18px;color:var(--gray);">আপনার NID নম্বর ও ইমেইল দিন। আমরা আপনার একাউন্ট যাচাই করব।</p>
+        <div class="form-group"><label>NID নম্বর</label><input type="text" id="reset-nid" class="form-control" placeholder="NID নম্বর"></div>
+        <div class="form-group"><label>ইমেইল</label><input type="email" id="reset-email" class="form-control" placeholder="ইমেইল ঠিকানা"></div>
+        <div style="text-align:center;margin-top:18px;">
+            <button class="btn btn-primary" onclick="handleForgotPassword()"><i class="fas fa-paper-plane"></i> রিসেট লিংক পাঠান</button>
+        </div>`;
+    document.getElementById('service-modal').classList.remove('hidden');
+}
+function handleForgotPassword() {
+    const nid = document.getElementById('reset-nid').value.trim();
+    const email = document.getElementById('reset-email').value.trim();
+    if (!dbCache) { showToast('ডেটা লোড হচ্ছে...', 'warning'); return; }
+    const user = dbCache.users.find(u => u.nid === nid && u.email === email);
+    if (user) showToast('✓ পাসওয়ার্ড রিসেট লিংক পাঠানো হয়েছে (ডেমো)', 'success');
+    else showToast('NID বা ইমেইল মিলছে না', 'error');
+    closeModal();
+}
+
+async function handleLogin() {
+    const uid = document.getElementById('login-userid').value.trim();
+    const pwd = document.getElementById('login-password').value;
+    const cap = document.getElementById('login-captcha').value.trim().toUpperCase();
+    if (!uid || !pwd) { showToast('সব তথ্য পূরণ করুন', 'error'); return; }
+    if (cap !== captchaValue) { showToast('নিরাপত্তা কোড সঠিক নয়', 'error'); generateCaptcha(); return; }
+    const db = await IslamicBankSystem.load();
+    const user = IslamicBankSystem.findUser(uid, pwd);
+    if (!user) { showToast('ইউজার আইডি বা পাসওয়ার্ড সঠিক নয়', 'error'); generateCaptcha(); return; }
+    if (user.status === 'suspended') { showToast('একাউন্ট স্থগিত। কর্তৃপক্ষের সাথে যোগাযোগ করুন।', 'error'); return; }
+    currentUser = {...user};
+    sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+    loadDashboard();
+}
+
+async function handleRegister() {
+    const name = document.getElementById('reg-name').value.trim();
+    const title = document.getElementById('reg-title').value;
+    const nid = document.getElementById('reg-nid').value.trim();
+    const email = document.getElementById('reg-email').value.trim();
+    const phone = document.getElementById('reg-phone').value.trim();
+    const type = document.getElementById('reg-type').value;
+    const pwd = document.getElementById('reg-password').value;
+    const confirmPwd = document.getElementById('reg-confirm-password').value;
+    const dob = document.getElementById('reg-dob').value;
+    const address = document.getElementById('reg-address').value.trim();
+    const occupation = document.getElementById('reg-occupation').value;
+    const income = parseInt(document.getElementById('reg-income').value) || 0;
+    const terms = document.getElementById('reg-terms').checked;
+
+    if (!name || !nid || !email || !phone || !type || !pwd || !address) { showToast('সব তথ্য পূরণ করুন', 'error'); return; }
+    if (!/^\d{10}$|^\d{17}$/.test(nid)) { showToast('NID ১০ বা ১৭ ডিজিটের হতে হবে', 'error'); return; }
+    if (pwd.length < 8) { showToast('পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে', 'error'); return; }
+    if (pwd !== confirmPwd) { showToast('পাসওয়ার্ড মিলছে না', 'error'); return; }
+    if (!terms) { showToast('শর্তাবলী মেনে নিতে হবে', 'error'); return; }
+
+    const db = await IslamicBankSystem.load();
+    if (db.users.find(u => u.nid === nid)) { showToast('এই NID দিয়ে একাউন্ট আগেই আছে', 'error'); return; }
+    if (db.users.find(u => u.email === email)) { showToast('এই ইমেইল দিয়ে একাউন্ট আগেই আছে', 'error'); return; }
+
+    const userId = 'user_' + Date.now();
+    const fullName = title ? `${title} ${name}` : name;
+    const newUser = { id:userId, nid, password:pwd, name:fullName, email, phone, type, balance:0, joined:new Date().toLocaleDateString('bn-BD'), status:'active', address, occupation, monthlyIncome:income, dob };
+    db.users.push(newUser);
+    await IslamicBankSystem.save(db);
+    await IslamicBankSystem.addNotification('admin','নতুন রেজিস্ট্রেশন',`${fullName} নতুন একাউন্ট খুলেছেন`,'registration');
+    showToast('রেজিস্ট্রেশন সফল! লগইন করুন', 'success');
+    showLoginForm();
+}
+
+function logout() {
+    currentUser = null;
+    activeChatWith = null;
+    sessionStorage.removeItem('currentUser');
+    document.getElementById('app-section').classList.add('hidden');
+    document.getElementById('auth-section').classList.remove('hidden');
+    showLoginForm();
+}
+
+// ========== DASHBOARD ==========
+function loadDashboard() {
+    document.getElementById('auth-section').classList.add('hidden');
+    document.getElementById('app-section').classList.remove('hidden');
+    document.getElementById('sidebar-username').textContent = currentUser.name;
+    document.getElementById('sidebar-usertype').textContent = getUserTypeText(currentUser.type);
+    document.getElementById('user-avatar').textContent = currentUser.name.charAt(0);
+    buildMenu();
+    switchTab('dashboard');
+    updateNotificationCount();
+}
+
+function buildMenu() {
+    const mc = document.getElementById('menu-container');
+    mc.innerHTML = '';
+    const isAdmin = currentUser.type === 'admin';
+    const db = dbCache || {};
+    const pendingApps = (db.applications||[]).filter(a => a.status === 'pending').length;
+    const unreadMsgs = (db.messages||[]).filter(m => m.to === currentUser.id && !m.read).length;
+
+    const sections = isAdmin ? [
+        { label:'মূল', items:[
+            { id:'dashboard', label:'ড্যাশবোর্ড', icon:'fas fa-tachometer-alt' },
+        ]},
+        { label:'ব্যবস্থাপনা', items:[
+            { id:'applications', label:'আবেদনসমূহ', icon:'fas fa-file-alt', badge:pendingApps },
+            { id:'users', label:'ব্যবহারকারী', icon:'fas fa-users' },
+            { id:'services', label:'সেবা ব্যবস্থাপনা', icon:'fas fa-hand-holding-usd' },
+            { id:'transactions', label:'লেনদেন', icon:'fas fa-exchange-alt' },
+        ]},
+        { label:'বিশ্লেষণ', items:[
+            { id:'reports', label:'রিপোর্ট ও বিশ্লেষণ', icon:'fas fa-chart-bar' },
+            { id:'sharia-panel', label:'শরীয়া প্যানেল', icon:'fas fa-gavel' },
+        ]},
+        { label:'যোগাযোগ', items:[
+            { id:'chat-admin', label:'গ্রাহক চ্যাট', icon:'fas fa-comments', badge:unreadMsgs },
+            { id:'settings', label:'সেটিংস', icon:'fas fa-cog' },
+        ]},
+    ] : [
+        { label:'মূল', items:[
+            { id:'dashboard', label:'ড্যাশবোর্ড', icon:'fas fa-home' },
+            { id:'my-accounts', label:'আমার অ্যাকাউন্ট', icon:'fas fa-wallet' },
+        ]},
+        { label:'সেবা', items:[
+            { id:'services-list', label:'সেবাসমূহ', icon:'fas fa-hand-holding-usd' },
+            { id:'apply-service', label:'নতুন আবেদন', icon:'fas fa-plus-circle' },
+            { id:'my-applications', label:'আমার আবেদন', icon:'fas fa-file-alt', badge:(db.applications||[]).filter(a=>a.userId===currentUser.id&&a.status==='pending').length },
+        ]},
+        { label:'আর্থিক', items:[
+            { id:'transactions', label:'লেনদেন ইতিহাস', icon:'fas fa-history' },
+            { id:'calculator', label:'মুনাফা ক্যালকুলেটর', icon:'fas fa-calculator' },
+        ]},
+        { label:'সহায়তা', items:[
+            { id:'chat-user', label:'সহায়তা চ্যাট', icon:'fas fa-comment-dots', badge:unreadMsgs },
+            { id:'sharia-advice', label:'শরীয়া পরামর্শ', icon:'fas fa-hands-helping' },
+            { id:'profile', label:'আমার প্রোফাইল', icon:'fas fa-user' },
+        ]},
+    ];
+
+    sections.forEach(sec => {
+        const sectionDiv = document.createElement('div');
+        sectionDiv.innerHTML = `<div class="menu-section">${sec.label}</div>`;
+        sec.items.forEach(item => {
+            const d = document.createElement('div');
+            d.className = 'menu-item';
+            d.id = `menu-${item.id}`;
+            d.innerHTML = `<i class="${item.icon}"></i><span>${item.label}</span>${item.badge ? `<span class="badge">${item.badge}</span>` : ''}`;
+            d.onclick = () => switchTab(item.id);
+            sectionDiv.appendChild(d);
+        });
+        mc.appendChild(sectionDiv);
+    });
+}
+
+function switchTab(tabId) {
+    document.querySelectorAll('.menu-item').forEach(i => i.classList.remove('active'));
+    const am = document.getElementById(`menu-${tabId}`);
+    if (am) am.classList.add('active');
+    document.getElementById('sidebar').classList.remove('open');
+    const ca = document.getElementById('content-area');
+
+    const map = {
+        'dashboard': showDashboard, 'services-list': showServices, 'services': showServices,
+        'apply-service': showApplyService, 'my-applications': showApplications, 'applications': showApplications,
+        'chat-user': showChat, 'chat-admin': showChat, 'sharia-advice': showShariaPanel, 'sharia-panel': showShariaPanel,
+        'my-accounts': showMyAccounts, 'users': showUsers, 'transactions': showTransactions,
+        'reports': showReports, 'profile': showProfile, 'settings': showSettings,
+        'calculator': () => { document.getElementById('calc-modal').classList.remove('hidden'); showDashboard(ca); }
+    };
+    if (map[tabId]) map[tabId](ca);
+}
+
+// ========== DASHBOARD VIEW ==========
+async function showDashboard(container) {
+    const db = await IslamicBankSystem.load();
+    let statsHtml = '';
+    if (currentUser.type === 'admin') {
+        const totalUsers = db.users.filter(u => u.type !== 'admin').length;
+        const pendingApps = db.applications.filter(a => a.status === 'pending').length;
+        const approvedApps = db.applications.filter(a => a.status === 'approved').length;
+        const totalBalance = db.users.filter(u => u.type !== 'admin').reduce((s,u) => s+(u.balance||0), 0);
+        statsHtml = `<div class="stats-grid">
+            <div class="stat-card"><div class="stat-info"><h3>${totalUsers}</h3><p>মোট গ্রাহক</p></div><div class="stat-icon"><i class="fas fa-users"></i></div></div>
+            <div class="stat-card warning"><div class="stat-info"><h3>${pendingApps}</h3><p>অপেক্ষমান আবেদন</p></div><div class="stat-icon"><i class="fas fa-clock"></i></div></div>
+            <div class="stat-card success"><div class="stat-info"><h3>${approvedApps}</h3><p>অনুমোদিত আবেদন</p></div><div class="stat-icon"><i class="fas fa-check-circle"></i></div></div>
+            <div class="stat-card info"><div class="stat-info"><h3>৳${formatMoney(totalBalance)}</h3><p>মোট আমানত</p></div><div class="stat-icon"><i class="fas fa-wallet"></i></div></div>
+        </div>`;
+    } else {
+        const myApps = db.applications.filter(a => a.userId === currentUser.id);
+        const myTxns = db.transactions.filter(t => t.userId === currentUser.id);
+        const me = db.users.find(u => u.id === currentUser.id);
+        currentUser.balance = me ? me.balance : 0;
+        statsHtml = `<div class="stats-grid">
+            <div class="stat-card"><div class="stat-info"><h3>৳${formatMoney(currentUser.balance||0)}</h3><p>বর্তমান ব্যালেন্স</p></div><div class="stat-icon"><i class="fas fa-wallet"></i></div></div>
+            <div class="stat-card warning"><div class="stat-info"><h3>${myApps.filter(a=>a.status==='pending').length}</h3><p>অপেক্ষমান আবেদন</p></div><div class="stat-icon"><i class="fas fa-clock"></i></div></div>
+            <div class="stat-card success"><div class="stat-info"><h3>${myApps.filter(a=>a.status==='approved').length}</h3><p>অনুমোদিত আবেদন</p></div><div class="stat-icon"><i class="fas fa-check-circle"></i></div></div>
+            <div class="stat-card info"><div class="stat-info"><h3>${myTxns.length}</h3><p>মোট লেনদেন</p></div><div class="stat-icon"><i class="fas fa-exchange-alt"></i></div></div>
+        </div>`;
+    }
+
+    const recentTxns = db.transactions.filter(t => currentUser.type === 'admin' || t.userId === currentUser.id).slice(-5).reverse();
+    const txnHtml = recentTxns.length ? recentTxns.map(t => `
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:36px;height:36px;border-radius:50%;background:${t.type==='deposit'?'#d4edda':'#f8d7da'};display:flex;align-items:center;justify-content:center;color:${t.type==='deposit'?'var(--success)':'var(--danger)'};">
+                    <i class="fas fa-${t.type==='deposit'?'arrow-down':'arrow-up'}"></i>
+                </div>
+                <div><div style="font-weight:600;font-size:0.92rem;">${t.description}</div><div style="font-size:0.8rem;color:var(--gray);">${t.date}</div></div>
+            </div>
+            <div style="font-weight:700;color:${t.type==='deposit'?'var(--success)':'var(--danger)'};">${t.type==='deposit'?'+':'-'}৳${formatMoney(t.amount)}</div>
+        </div>`).join('') : '<div style="text-align:center;padding:25px;color:var(--gray);">কোন লেনদেন নেই</div>';
+
+    container.innerHTML = `
+        <div class="dashboard-content">
+            <div class="welcome-banner">
+                <div>
+                    <h2 style="margin-bottom:8px;">আসসালামু আলাইকুম, ${currentUser.name}</h2>
+                    <p style="opacity:0.85;">নূর ইসলামী শরীয়া ব্যাংকে স্বাগতম।</p>
+                    ${currentUser.type !== 'admin' ? `<div style="margin-top:12px;"><span class="sharia-badge"><i class="fas fa-check"></i> শরীয়া সম্মত ব্যাংকিং</span></div>` : ''}
+                </div>
+                <div style="font-size:4rem;opacity:0.15;"><i class="fas fa-mosque"></i></div>
+            </div>
+            ${statsHtml}
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px;">
+                <div class="card" style="cursor:default;">
+                    <h4 style="color:var(--primary-dark);margin-bottom:15px;"><i class="fas fa-history"></i> সাম্প্রতিক লেনদেন</h4>
+                    ${txnHtml}
+                </div>
+                <div class="card" style="cursor:default;">
+                    <h4 style="color:var(--primary-dark);margin-bottom:15px;"><i class="fas fa-bolt"></i> দ্রুত অ্যাকশন</h4>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                        ${currentUser.type === 'admin' ? `
+                            <div onclick="switchTab('applications')" style="background:var(--primary-light);border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;transition:var(--transition);" onmouseover="this.style.background='#c8e6c9'" onmouseout="this.style.background='var(--primary-light)'">
+                                <i class="fas fa-file-alt" style="font-size:1.8rem;color:var(--primary);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">আবেদন দেখুন</div>
+                            </div>
+                            <div onclick="switchTab('users')" style="background:#e3f2fd;border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#bbdefb'" onmouseout="this.style.background='#e3f2fd'">
+                                <i class="fas fa-users" style="font-size:1.8rem;color:var(--info);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">ব্যবহারকারী</div>
+                            </div>
+                            <div onclick="switchTab('chat-admin')" style="background:#e8f5e9;border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#c8e6c9'" onmouseout="this.style.background='#e8f5e9'">
+                                <i class="fas fa-comments" style="font-size:1.8rem;color:var(--success);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">গ্রাহক চ্যাট</div>
+                            </div>
+                            <div onclick="switchTab('reports')" style="background:#fff9e6;border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#fff3cc'" onmouseout="this.style.background='#fff9e6'">
+                                <i class="fas fa-chart-bar" style="font-size:1.8rem;color:var(--secondary);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">রিপোর্ট</div>
+                            </div>
+                        ` : `
+                            <div onclick="switchTab('apply-service')" style="background:var(--primary-light);border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#c8e6c9'" onmouseout="this.style.background='var(--primary-light)'">
+                                <i class="fas fa-plus-circle" style="font-size:1.8rem;color:var(--primary);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">নতুন সেবা</div>
+                            </div>
+                            <div onclick="switchTab('my-applications')" style="background:#e3f2fd;border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#bbdefb'" onmouseout="this.style.background='#e3f2fd'">
+                                <i class="fas fa-file-alt" style="font-size:1.8rem;color:var(--info);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">আমার আবেদন</div>
+                            </div>
+                            <div onclick="switchTab('chat-user')" style="background:#e8f5e9;border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#c8e6c9'" onmouseout="this.style.background='#e8f5e9'">
+                                <i class="fas fa-comment-dots" style="font-size:1.8rem;color:var(--success);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">সহায়তা</div>
+                            </div>
+                            <div onclick="document.getElementById('calc-modal').classList.remove('hidden')" style="background:#fff9e6;border-radius:var(--radius-sm);padding:15px;text-align:center;cursor:pointer;" onmouseover="this.style.background='#fff3cc'" onmouseout="this.style.background='#fff9e6'">
+                                <i class="fas fa-calculator" style="font-size:1.8rem;color:var(--secondary);"></i><div style="font-weight:600;margin-top:7px;font-size:0.88rem;">ক্যালকুলেটর</div>
+                            </div>
+                        `}
+                    </div>
+                </div>
+            </div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-home"></i> ড্যাশবোর্ড`;
+}
+
+// ========== SERVICES ==========
+async function showServices(container) {
+    const db = await IslamicBankSystem.load();
+    const search = (container._search || '').toLowerCase();
+    const filtered = db.services.filter(s =>
+        s.name.toLowerCase().includes(search) || s.description.toLowerCase().includes(search) || s.category.toLowerCase().includes(search)
+    );
+    const cardsHtml = filtered.map(s => `
+        <div class="service-card">
+            <div class="service-icon"><i class="${s.icon}"></i></div>
+            <div class="service-body">
+                <div class="service-title">${s.name}</div>
+                <span class="sharia-badge" style="margin-bottom:10px;"><i class="fas fa-check"></i> শরীয়া অনুমোদিত</span>
+                <div class="service-desc">${s.description}</div>
+                <div class="service-meta">
+                    <span><i class="fas fa-percentage" style="color:var(--success);"></i> ${s.profitRate}</span>
+                    <span><i class="fas fa-calendar" style="color:var(--info);"></i> ${s.duration}</span>
+                </div>
+                <div class="service-features">
+                    ${s.features.map(f => `<div class="feature-item"><i class="fas fa-check-circle"></i>${f}</div>`).join('')}
+                </div>
+                <div style="display:flex;gap:8px;margin-top:auto;">
+                    <button class="btn btn-outline btn-sm flex-1" onclick="viewServiceDetails('${s.id}')"><i class="fas fa-eye"></i> বিস্তারিত</button>
+                    ${currentUser.type !== 'admin' ? `<button class="btn btn-primary btn-sm flex-1" onclick="openApplyModal('${s.id}')"><i class="fas fa-paper-plane"></i> আবেদন</button>` : ''}
+                </div>
+            </div>
+        </div>`).join('');
+
+    container.innerHTML = `
+        <div class="services-container">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:12px;">
+                <h2 style="color:var(--primary-dark);">আমাদের ইসলামী সেবাসমূহ</h2>
+                <div style="position:relative;">
+                    <i class="fas fa-search" style="position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--gray);"></i>
+                    <input type="text" placeholder="সেবা খুঁজুন..." class="form-control" style="padding-left:38px;width:250px;" oninput="container._search=this.value;showServices(document.getElementById('content-area'))" id="service-search">
+                </div>
+            </div>
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterServices(this,'all')">সব সেবা</button>
+                <button class="filter-btn" onclick="filterServices(this,'savings')">সঞ্চয়</button>
+                <button class="filter-btn" onclick="filterServices(this,'investment')">বিনিয়োগ</button>
+                <button class="filter-btn" onclick="filterServices(this,'finance')">ফাইন্যান্স</button>
+                <button class="filter-btn" onclick="filterServices(this,'loan')">ঋণ</button>
+                <button class="filter-btn" onclick="filterServices(this,'insurance')">বীমা</button>
+            </div>
+            <div class="services-grid" id="services-grid">${cardsHtml || '<div style="text-align:center;padding:50px;color:var(--gray);grid-column:1/-1;">কোন সেবা পাওয়া যায়নি</div>'}</div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-hand-holding-usd"></i> সেবাসমূহ`;
+}
+
+function filterServices(btn, type) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (!dbCache) return;
+    const grid = document.getElementById('services-grid');
+    const filtered = type === 'all' ? dbCache.services : dbCache.services.filter(s => s.type === type);
+    grid.innerHTML = filtered.map(s => `
+        <div class="service-card">
+            <div class="service-icon"><i class="${s.icon}"></i></div>
+            <div class="service-body">
+                <div class="service-title">${s.name}</div>
+                <span class="sharia-badge" style="margin-bottom:10px;"><i class="fas fa-check"></i> শরীয়া অনুমোদিত</span>
+                <div class="service-desc">${s.description}</div>
+                <div class="service-meta"><span><i class="fas fa-percentage" style="color:var(--success);"></i> ${s.profitRate}</span><span><i class="fas fa-calendar" style="color:var(--info);"></i> ${s.duration}</span></div>
+                <div style="display:flex;gap:8px;margin-top:auto;">
+                    <button class="btn btn-outline btn-sm flex-1" onclick="viewServiceDetails('${s.id}')"><i class="fas fa-eye"></i> বিস্তারিত</button>
+                    ${currentUser.type !== 'admin' ? `<button class="btn btn-primary btn-sm flex-1" onclick="openApplyModal('${s.id}')"><i class="fas fa-paper-plane"></i> আবেদন</button>` : ''}
+                </div>
+            </div>
+        </div>`).join('') || '<div style="text-align:center;padding:50px;color:var(--gray);grid-column:1/-1;">কোন সেবা নেই</div>';
+}
+
+async function viewServiceDetails(svcId) {
+    const db = await IslamicBankSystem.load();
+    const s = db.services.find(x => x.id === svcId);
+    if (!s) return;
+    document.getElementById('modal-title').textContent = s.name;
+    document.getElementById('modal-body').innerHTML = `
+        <div style="text-align:center;padding:25px;background:linear-gradient(135deg,#fff9e6,#fff3cc);border-radius:var(--radius);margin-bottom:20px;">
+            <div style="font-size:3.5rem;color:var(--secondary);margin-bottom:10px;"><i class="${s.icon}"></i></div>
+            <span class="sharia-badge"><i class="fas fa-check"></i> শরীয়া বোর্ড অনুমোদিত</span>
+        </div>
+        <p style="color:var(--gray);margin-bottom:18px;">${s.description}</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:20px;">
+            <div class="info-item"><div class="info-label">মুনাফার হার</div><div class="info-value" style="color:var(--success);">${s.profitRate}</div></div>
+            <div class="info-item"><div class="info-label">মেয়াদ</div><div class="info-value">${s.duration}</div></div>
+            <div class="info-item"><div class="info-label">ন্যূনতম</div><div class="info-value">৳${formatMoney(s.minAmount)}</div></div>
+        </div>
+        <h4 style="color:var(--primary-dark);margin-bottom:12px;">সুবিধাসমূহ</h4>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px;">
+            ${s.features.map(f => `<div class="feature-item" style="background:#f8f9fa;padding:8px 12px;border-radius:var(--radius-sm);"><i class="fas fa-check-circle"></i>${f}</div>`).join('')}
+        </div>
+        ${currentUser.type !== 'admin' ? `<button class="btn btn-primary w-100" onclick="closeModal();openApplyModal('${s.id}')"><i class="fas fa-paper-plane"></i> এখনই আবেদন করুন</button>` : ''}`;
+    document.getElementById('service-modal').classList.remove('hidden');
+}
+
+async function showApplyService(container) {
+    const db = await IslamicBankSystem.load();
+    const opts = db.services.map(s => `<option value="${s.id}" data-min="${s.minAmount}" data-max="${s.maxAmount}" data-rate="${s.profitRate}">${s.name} (${s.profitRate})</option>`).join('');
+    container.innerHTML = `
+        <div class="dashboard-content"><div style="max-width:700px;margin:0 auto;">
+            <div class="card" style="cursor:default;">
+                <h3 style="color:var(--primary-dark);margin-bottom:22px;"><i class="fas fa-plus-circle"></i> নতুন সেবার জন্য আবেদন</h3>
+                <div class="form-group"><label>সেবা নির্বাচন করুন</label>
+                    <select id="apply-service-id" class="form-control" onchange="onServiceChange(this)"><option value="">-- সেবা নির্বাচন --</option>${opts}</select>
+                </div>
+                <div id="service-info-box" style="display:none;background:var(--primary-light);border-radius:var(--radius-sm);padding:14px;margin-bottom:18px;">
+                    <div id="service-info-text"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>পরিমাণ (৳)</label>
+                        <input type="number" id="apply-amount" class="form-control" placeholder="পরিমাণ লিখুন" oninput="validateAmount(this)">
+                        <small id="amount-hint" style="color:var(--gray);font-size:0.8rem;"></small>
+                    </div>
+                    <div class="form-group">
+                        <label>মেয়াদ</label>
+                        <select id="apply-duration" class="form-control">
+                            <option>১ বছর</option><option>২ বছর</option><option>৩ বছর</option><option>৫ বছর</option><option>৭ বছর</option><option>১০ বছর</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group"><label>আবেদনের উদ্দেশ্য</label>
+                    <textarea id="apply-purpose" class="form-control" rows="3" placeholder="আবেদনের উদ্দেশ্য বিস্তারিত লিখুন..."></textarea>
+                </div>
+                <div class="form-group"><label>প্রয়োজনীয় নথিপত্র</label>
+                    <div id="doc-checklist" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                        ${['NID কপি','ছবি (পাসপোর্ট সাইজ)','আয়ের প্রমাণ','ব্যাংক স্টেটমেন্ট'].map(d => `
+                            <div style="display:flex;align-items:center;gap:8px;background:#f8f9fa;padding:8px 12px;border-radius:var(--radius-sm);">
+                                <input type="checkbox" id="doc-${d.replace(/\s/g,'-')}">
+                                <label for="doc-${d.replace(/\s/g,'-')}" style="margin:0;font-size:0.88rem;">${d}</label>
+                            </div>`).join('')}
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 btn-lg" onclick="submitApplication()">
+                    <i class="fas fa-paper-plane"></i> আবেদন জমা দিন
+                </button>
+            </div>
+        </div></div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-plus-circle"></i> নতুন আবেদন`;
+}
+
+function onServiceChange(sel) {
+    const opt = sel.options[sel.selectedIndex];
+    const min = opt.dataset.min, max = opt.dataset.max, rate = opt.dataset.rate;
+    const box = document.getElementById('service-info-box');
+    const txt = document.getElementById('service-info-text');
+    if (sel.value && min) {
+        txt.innerHTML = `<strong style="color:var(--primary-dark);">সেবার তথ্য:</strong> ন্যূনতম <strong>৳${formatMoney(Number(min))}</strong>, সর্বোচ্চ <strong>৳${formatMoney(Number(max))}</strong>, মুনাফার হার <strong style="color:var(--success);">${rate}</strong>`;
+        document.getElementById('amount-hint').textContent = `ন্যূনতম ৳${formatMoney(Number(min))} - সর্বোচ্চ ৳${formatMoney(Number(max))}`;
+        box.style.display = 'block';
+    } else { box.style.display = 'none'; }
+}
+function validateAmount(inp) {
+    const sel = document.getElementById('apply-service-id');
+    const opt = sel.options[sel.selectedIndex];
+    if (!opt.dataset.min) return;
+    const v = Number(inp.value);
+    const min = Number(opt.dataset.min), max = Number(opt.dataset.max);
+    if (v < min) inp.style.borderColor = 'var(--danger)';
+    else if (v > max) inp.style.borderColor = 'var(--warning)';
+    else inp.style.borderColor = 'var(--success)';
+}
+
+async function openApplyModal(svcId) {
+    await showApplyService(document.getElementById('content-area'));
+    const sel = document.getElementById('apply-service-id');
+    sel.value = svcId;
+    onServiceChange(sel);
+    switchTab('apply-service');
+}
+
+async function submitApplication() {
+    const svcId = document.getElementById('apply-service-id').value;
+    const amount = parseInt(document.getElementById('apply-amount').value);
+    const duration = document.getElementById('apply-duration').value;
+    const purpose = document.getElementById('apply-purpose').value.trim();
+    if (!svcId) { showToast('সেবা নির্বাচন করুন', 'error'); return; }
+    if (!amount || amount <= 0) { showToast('সঠিক পরিমাণ লিখুন', 'error'); return; }
+    if (!purpose) { showToast('আবেদনের উদ্দেশ্য লিখুন', 'error'); return; }
+    const db = await IslamicBankSystem.load();
+    const svc = db.services.find(s => s.id === svcId);
+    if (!svc) return;
+    if (amount < svc.minAmount) { showToast(`ন্যূনতম পরিমাণ ৳${formatMoney(svc.minAmount)}`, 'error'); return; }
+    if (amount > svc.maxAmount) { showToast(`সর্বোচ্চ পরিমাণ ৳${formatMoney(svc.maxAmount)}`, 'error'); return; }
+    const app = { userId:currentUser.id, userName:currentUser.name, userType:currentUser.type, serviceId:svcId, serviceName:svc.name, amount, duration, purpose };
+    await IslamicBankSystem.addApplication(app);
+    showToast('আবেদন সফলভাবে জমা হয়েছে', 'success');
+    switchTab('my-applications');
+}
+
+// ========== APPLICATIONS ==========
+async function showApplications(container) {
+    const db = await IslamicBankSystem.load();
+    let apps = currentUser.type === 'admin' ? db.applications : db.applications.filter(a => a.userId === currentUser.id);
+    apps = apps.slice().reverse();
+    const tRows = apps.map(a => `
+        <tr>
+            <td>${a.userName || currentUser.name}<div style="font-size:0.8rem;color:var(--gray);">${getUserTypeText(a.userType||'personal')}</div></td>
+            <td><div style="font-weight:600;">${a.serviceName}</div></td>
+            <td style="font-weight:600;color:var(--primary);">৳${formatMoney(a.amount)}</td>
+            <td>${a.duration}</td>
+            <td style="font-size:0.85rem;">${a.appliedDate}</td>
+            <td><span class="status-badge status-${a.status}">${{pending:'অপেক্ষমান',approved:'অনুমোদিত',rejected:'বাতিল',processing:'প্রক্রিয়াধীন'}[a.status]||a.status}</span></td>
+            <td><div class="action-buttons">
+                <button class="btn btn-sm btn-info" onclick="viewApplication(${a.id})"><i class="fas fa-eye"></i></button>
+                ${currentUser.type==='admin'&&a.status==='pending'?`<button class="btn btn-sm btn-success" onclick="quickApprove(${a.id})"><i class="fas fa-check"></i></button><button class="btn btn-sm btn-danger" onclick="quickReject(${a.id})"><i class="fas fa-times"></i></button>`:''}
+            </div></td>
+        </tr>`).join('');
+
+    container.innerHTML = `
+        <div class="table-container">
+            <div class="table-header">
+                <h2>${currentUser.type==='admin'?'সকল আবেদন':'আমার আবেদন'} <span style="font-size:0.85rem;font-weight:400;color:var(--gray);">(${apps.length}টি)</span></h2>
+                ${currentUser.type==='admin'?`<div class="filter-bar">
+                    <button class="filter-btn active" onclick="filterApps(this,'all')">সব</button>
+                    <button class="filter-btn" onclick="filterApps(this,'pending')">অপেক্ষমান</button>
+                    <button class="filter-btn" onclick="filterApps(this,'approved')">অনুমোদিত</button>
+                    <button class="filter-btn" onclick="filterApps(this,'rejected')">বাতিল</button>
+                </div>`:''}
+            </div>
+            <div class="table-responsive">
+                <table><thead><tr><th>আবেদনকারী</th><th>সেবা</th><th>পরিমাণ</th><th>মেয়াদ</th><th>তারিখ</th><th>অবস্থা</th><th>কার্যক্রম</th></tr></thead>
+                <tbody id="apps-tbody">${tRows||`<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--gray);"><i class="fas fa-file-alt" style="font-size:3rem;opacity:0.3;display:block;margin-bottom:12px;"></i>কোন আবেদন নেই</td></tr>`}</tbody>
+                </table>
+            </div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-file-alt"></i> ${currentUser.type==='admin'?'আবেদনসমূহ':'আমার আবেদন'}`;
+}
+
+function filterApps(btn, status) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (!dbCache) return;
+    let apps = status === 'all' ? dbCache.applications : dbCache.applications.filter(a => a.status === status);
+    apps = apps.slice().reverse();
+    const tbody = document.getElementById('apps-tbody');
+    if (!tbody) return;
+    tbody.innerHTML = apps.map(a => `
+        <tr>
+            <td>${a.userName}<div style="font-size:0.8rem;color:var(--gray);">${getUserTypeText(a.userType||'personal')}</div></td>
+            <td><div style="font-weight:600;">${a.serviceName}</div></td>
+            <td style="font-weight:600;color:var(--primary);">৳${formatMoney(a.amount)}</td>
+            <td>${a.duration}</td>
+            <td style="font-size:0.85rem;">${a.appliedDate}</td>
+            <td><span class="status-badge status-${a.status}">${{pending:'অপেক্ষমান',approved:'অনুমোদিত',rejected:'বাতিল'}[a.status]||a.status}</span></td>
+            <td><div class="action-buttons">
+                <button class="btn btn-sm btn-info" onclick="viewApplication(${a.id})"><i class="fas fa-eye"></i></button>
+                ${a.status==='pending'?`<button class="btn btn-sm btn-success" onclick="quickApprove(${a.id})"><i class="fas fa-check"></i></button><button class="btn btn-sm btn-danger" onclick="quickReject(${a.id})"><i class="fas fa-times"></i></button>`:''}
+            </div></td>
+        </tr>`).join('') || `<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--gray);">কোন আবেদন নেই</td></tr>`;
+}
+
+async function viewApplication(appId) {
+    const db = await IslamicBankSystem.load();
+    const app = db.applications.find(a => a.id == appId);
+    if (!app) return;
+    const svc = db.services.find(s => s.id === app.serviceId);
+    document.getElementById('modal-title').textContent = 'আবেদন বিস্তারিত';
+    const reviewSection = (currentUser.type === 'admin' && app.status === 'pending') ? `
+        <div style="background:var(--primary-light);border-radius:var(--radius);padding:20px;margin:20px 0;">
+            <h4 style="color:var(--primary-dark);margin-bottom:15px;"><i class="fas fa-gavel"></i> শরীয়া রিভিউ ও অনুমোদন</h4>
+            <div class="form-row">
+                <div class="form-group"><label>শরীয়া সম্মতি</label>
+                    <select id="sharia-compliance" class="form-control"><option value="approved">শরীয়া সম্মত</option><option value="conditionally-approved">শর্তসাপেক্ষে</option><option value="not-approved">অসম্মত</option></select>
+                </div>
+            </div>
+            <div class="form-group"><label>মন্তব্য</label>
+                <textarea id="sharia-comment" class="form-control" rows="3" placeholder="শরীয়া রিভিউ মন্তব্য..."></textarea>
+            </div>
+            <div style="display:flex;gap:10px;">
+                <button class="btn btn-success flex-1" onclick="approveApplication(${app.id})"><i class="fas fa-check"></i> অনুমোদন করুন</button>
+                <button class="btn btn-danger flex-1" onclick="rejectApplication(${app.id})"><i class="fas fa-times"></i> বাতিল করুন</button>
+            </div>
+        </div>` : '';
+
+    document.getElementById('modal-body').innerHTML = `
+        <div style="background:linear-gradient(135deg,var(--primary-light),#e8f5e9);border-radius:var(--radius);padding:20px;margin-bottom:20px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+                <div>
+                    <div style="font-size:0.85rem;color:var(--gray);">আবেদনকারী</div>
+                    <div style="font-size:1.2rem;font-weight:700;">${app.userName}</div>
+                    <div style="font-size:0.88rem;color:var(--gray);">${getUserTypeText(app.userType||'personal')}</div>
+                </div>
+                <span class="status-badge status-${app.status}">${{pending:'অপেক্ষমান',approved:'অনুমোদিত',rejected:'বাতিল'}[app.status]||app.status}</span>
+            </div>
+        </div>
+        <div class="info-grid" style="margin-bottom:20px;">
+            <div class="info-item"><div class="info-label">সেবা</div><div class="info-value">${app.serviceName}</div></div>
+            <div class="info-item"><div class="info-label">পরিমাণ</div><div class="info-value" style="color:var(--primary);">৳${formatMoney(app.amount)}</div></div>
+            <div class="info-item"><div class="info-label">মেয়াদ</div><div class="info-value">${app.duration}</div></div>
+            <div class="info-item"><div class="info-label">আবেদনের তারিখ</div><div class="info-value" style="font-size:0.88rem;">${app.appliedDate}</div></div>
+        </div>
+        <div style="margin-bottom:20px;"><h4 style="color:var(--primary-dark);margin-bottom:10px;"><i class="fas fa-file-alt"></i> আবেদনের উদ্দেশ্য</h4>
+            <div style="background:#f8f9fa;border-radius:var(--radius-sm);padding:14px;">${app.purpose}</div>
+        </div>
+        ${reviewSection}
+        ${app.status !== 'pending' ? `
+        <div style="background:${app.status==='approved'?'#d4edda':'#f8d7da'};border-radius:var(--radius);padding:18px;">
+            <h4 style="color:${app.status==='approved'?'#155724':'#721c24'};margin-bottom:10px;"><i class="fas fa-${app.status==='approved'?'check-circle':'times-circle'}"></i> ${app.status==='approved'?'অনুমোদন':'বাতিল'} বিবরণ</h4>
+            <p><strong>তারিখ:</strong> ${app.approvedDate||app.rejectedDate||'-'}</p>
+            <p><strong>অফিসার:</strong> ${app.approvedBy||app.rejectedBy||'-'}</p>
+            ${app.reviewComment?`<p><strong>মন্তব্য:</strong> ${app.reviewComment}</p>`:''}
+        </div>` : ''}`;
+    document.getElementById('service-modal').classList.remove('hidden');
+}
+
+async function approveApplication(appId) {
+    const db = await IslamicBankSystem.load();
+    const app = db.applications.find(a => a.id == appId);
+    if (!app) return;
+    app.status = 'approved';
+    app.approvedBy = currentUser.name;
+    app.approvedDate = new Date().toLocaleString('bn-BD');
+    app.shariaReview = true;
+    app.reviewComment = document.getElementById('sharia-comment')?.value || 'শরীয়া সম্মত আবেদন, অনুমোদিত';
+    const user = db.users.find(u => u.id === app.userId);
+    if (user && (app.serviceId.includes('savings') || app.serviceId.includes('deposit'))) {
+        user.balance = (user.balance || 0) + app.amount;
+        db.transactions.push({ id:Date.now(), userId:app.userId, type:'deposit', amount:app.amount, description:app.serviceName, date:new Date().toLocaleString('bn-BD'), status:'completed', balance:user.balance });
+    }
+    await IslamicBankSystem.save(db);
+    await IslamicBankSystem.addNotification(app.userId,'আবেদন অনুমোদিত',`আপনার ${app.serviceName} আবেদন অনুমোদিত হয়েছে`,'success');
+    showToast('আবেদন অনুমোদন করা হয়েছে', 'success');
+    closeModal();
+    showApplications(document.getElementById('content-area'));
+    updateNotificationCount();
+}
+
+async function rejectApplication(appId) {
+    const db = await IslamicBankSystem.load();
+    const app = db.applications.find(a => a.id == appId);
+    if (!app) return;
+    app.status = 'rejected';
+    app.rejectedBy = currentUser.name;
+    app.rejectedDate = new Date().toLocaleString('bn-BD');
+    app.reviewComment = document.getElementById('sharia-comment')?.value || 'শরীয়া নীতিমালার লঙ্ঘন';
+    await IslamicBankSystem.save(db);
+    await IslamicBankSystem.addNotification(app.userId,'আবেদন বাতিল',`আপনার ${app.serviceName} আবেদন বাতিল হয়েছে`,'error');
+    showToast('আবেদন বাতিল করা হয়েছে', 'warning');
+    closeModal();
+    showApplications(document.getElementById('content-area'));
+    updateNotificationCount();
+}
+
+async function quickApprove(appId) {
+    const db = await IslamicBankSystem.load();
+    const app = db.applications.find(a => a.id == appId);
+    if (!app) return;
+    app.status = 'approved'; app.approvedBy = currentUser.name; app.approvedDate = new Date().toLocaleString('bn-BD'); app.reviewComment = 'দ্রুত অনুমোদন';
+    const user = db.users.find(u => u.id === app.userId);
+    if (user && app.serviceId.includes('savings')) { user.balance = (user.balance||0) + app.amount; }
+    await IslamicBankSystem.save(db);
+    await IslamicBankSystem.addNotification(app.userId,'আবেদন অনুমোদিত',`${app.serviceName} অনুমোদিত`,'success');
+    showToast('অনুমোদন হয়েছে', 'success');
+    showApplications(document.getElementById('content-area'));
+}
+
+async function quickReject(appId) {
+    const db = await IslamicBankSystem.load();
+    const app = db.applications.find(a => a.id == appId);
+    if (!app) return;
+    app.status = 'rejected'; app.rejectedBy = currentUser.name; app.rejectedDate = new Date().toLocaleString('bn-BD');
+    await IslamicBankSystem.save(db);
+    await IslamicBankSystem.addNotification(app.userId,'আবেদন বাতিল',`${app.serviceName} বাতিল`,'error');
+    showToast('বাতিল করা হয়েছে', 'warning');
+    showApplications(document.getElementById('content-area'));
+}
+
+// ========== CHAT ==========
+async function showChat(container) {
+    const db = await IslamicBankSystem.load();
+    if (currentUser.type === 'admin') {
+        const users = db.users.filter(u => u.type !== 'admin');
+        const userListHtml = users.map(u => {
+            const unread = db.messages.filter(m => m.from === u.id && m.to === 'admin' && !m.read).length;
+            const last = db.messages.filter(m => (m.from===u.id&&m.to==='admin')||(m.from==='admin'&&m.to===u.id)).sort((a,b)=>b.id-a.id)[0];
+            return `<div class="chat-user-item ${activeChatWith===u.id?'active':''}" onclick="openChatWith('${u.id}')">
+                <div class="user-avatar" style="width:36px;height:36px;font-size:0.95rem;">${u.name.charAt(0)}</div>
+                <div style="flex:1;min-width:0;">
+                    <div style="font-weight:600;font-size:0.92rem;">${u.name}</div>
+                    <div style="font-size:0.8rem;color:var(--gray);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${last?last.text.substring(0,28)+'...':'কোন বার্তা নেই'}</div>
+                </div>
+                ${unread?`<span class="badge">${unread}</span>`:''}
+            </div>`;
+        }).join('');
+
+        const messagesHtml = activeChatWith ? await getChatMessages('admin', activeChatWith) : '<div style="text-align:center;padding:60px;color:var(--gray);"><i class="fas fa-comment-dots" style="font-size:3rem;opacity:0.3;display:block;margin-bottom:15px;"></i>একজন গ্রাহক নির্বাচন করুন</div>';
+        const activeName = activeChatWith ? (db.users.find(u=>u.id===activeChatWith)?.name || '') : 'গ্রাহক নির্বাচন করুন';
+
+        container.innerHTML = `<div class="chat-container">
+            <div class="chat-list"><div class="chat-header"><i class="fas fa-users"></i> গ্রাহক তালিকা</div>
+            <div style="overflow-y:auto;flex:1;">${userListHtml||'<div style="padding:20px;text-align:center;color:var(--gray);">কোন গ্রাহক নেই</div>'}</div></div>
+            <div class="chat-window">
+                <div class="chat-header"><i class="fas fa-user"></i> ${activeName} ${activeChatWith?'<span style="margin-left:8px;font-size:0.75rem;color:var(--success);font-weight:400;">● অনলাইন</span>':''}</div>
+                <div class="chat-messages" id="chat-messages">${messagesHtml}</div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" class="chat-input" placeholder="${activeChatWith?'বার্তা লিখুন...':'প্রথমে গ্রাহক নির্বাচন করুন'}" ${!activeChatWith?'disabled':''} onkeypress="if(event.key==='Enter')sendMessage()">
+                    <button class="btn btn-primary" onclick="sendMessage()" ${!activeChatWith?'disabled':''}><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>`;
+    } else {
+        const messagesHtml = await getChatMessages(currentUser.id, 'admin');
+        container.innerHTML = `<div class="chat-container" style="flex-direction:column;height:auto;">
+            <div class="chat-window" style="height:calc(100vh - 170px);">
+                <div class="chat-header"><i class="fas fa-headset"></i> ব্যাংক সহায়তা কেন্দ্র <span style="margin-left:auto;font-size:0.75rem;font-weight:400;color:var(--success);">● অনলাইন</span></div>
+                <div class="chat-messages" id="chat-messages">${messagesHtml||'<div style="text-align:center;padding:40px;color:var(--gray);">কোন বার্তা নেই। আপনার প্রশ্ন পাঠান।</div>'}</div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" class="chat-input" placeholder="আপনার বার্তা লিখুন..." onkeypress="if(event.key==='Enter')sendMessage()">
+                    <button class="btn btn-primary" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>`;
+    }
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-comments"></i> ${currentUser.type==='admin'?'গ্রাহক চ্যাট':'সহায়তা চ্যাট'}`;
+}
+
+async function getChatMessages(user1, user2) {
+    const db = await IslamicBankSystem.load();
+    const msgs = db.messages.filter(m =>
+        (m.from===user1&&m.to===user2)||(m.from===user2&&m.to===user1)
+    ).sort((a,b) => a.id - b.id);
+    // Mark as read
+    let changed = false;
+    msgs.forEach(m => { if (m.to === currentUser.id && !m.read) { m.read = true; changed = true; } });
+    if (changed) await IslamicBankSystem.save(db);
+    return msgs.map(m => `
+        <div class="message ${m.from===currentUser.id?'msg-sent':'msg-received'}">
+            <div>${m.text}</div>
+            <div class="message-time">${m.timestamp} ${m.from===currentUser.id?'• আপনি':''}</div>
+        </div>`).join('') || '<div style="text-align:center;padding:30px;color:var(--gray);">কোন বার্তা নেই। প্রথম বার্তা পাঠান।</div>';
+}
+
+async function openChatWith(userId) {
+    activeChatWith = userId;
+    showChat(document.getElementById('content-area'));
+}
+
+async function sendMessage() {
+    const input = document.getElementById('chat-input');
+    if (!input) return;
+    const text = input.value.trim();
+    if (!text) return;
+    const to = currentUser.type === 'admin' ? activeChatWith : 'admin';
+    if (!to) return;
+    await IslamicBankSystem.addMessage(currentUser.id, to, text);
+    input.value = '';
+    const msgs = document.getElementById('chat-messages');
+    if (msgs) {
+        const newMsg = document.createElement('div');
+        newMsg.className = 'message msg-sent';
+        newMsg.innerHTML = `<div>${text}</div><div class="message-time">${new Date().toLocaleString('bn-BD')} • আপনি</div>`;
+        if (msgs.querySelector('div[style*="text-align:center"]')) msgs.innerHTML = '';
+        msgs.appendChild(newMsg);
+        msgs.scrollTop = msgs.scrollHeight;
+    }
+    updateNotificationCount();
+    buildMenu();
+}
+
+// ========== SHARIA PANEL ==========
+async function showShariaPanel(container) {
+    const db = await IslamicBankSystem.load();
+    if (currentUser.type === 'admin') {
+        const pendingReviews = db.applications.filter(a => a.status === 'pending').length;
+        container.innerHTML = `
+        <div class="dashboard-content">
+            <div class="welcome-banner">
+                <div><h2>শরীয়া সুপারভাইজরি বোর্ড</h2><p>ইসলামী আইনের আলোকে সকল কার্যক্রম পর্যালোচনা</p></div>
+                <div style="font-size:4rem;opacity:0.15;"><i class="fas fa-gavel"></i></div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-info"><h3>${pendingReviews}</h3><p>পর্যালোচনা প্রয়োজন</p></div><div class="stat-icon"><i class="fas fa-clock"></i></div></div>
+                <div class="stat-card success"><div class="stat-info"><h3>${db.applications.filter(a=>a.shariaReview&&a.status==='approved').length}</h3><p>শরীয়া অনুমোদিত</p></div><div class="stat-icon"><i class="fas fa-check-circle"></i></div></div>
+                <div class="stat-card info"><div class="stat-info"><h3>${db.services.length}</h3><p>অনুমোদিত সেবা</p></div><div class="stat-icon"><i class="fas fa-hand-holding-usd"></i></div></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px;">
+                <div class="card" style="cursor:default;">
+                    <h4 style="color:var(--primary-dark);margin-bottom:15px;"><i class="fas fa-book-open"></i> শরীয়া নীতিমালা সারসংক্ষেপ</h4>
+                    <div class="timeline">
+                        ${[['সুদ (রিবা) নিষিদ্ধ','সকল লেনদেন থেকে সুদ সম্পূর্ণ নিষিদ্ধ','success'],['মুশারাকা','লাভ-ক্ষতি অংশীদারিত্ব পদ্ধতি','success'],['মুরাবাহা','ক্রয়-বিক্রয়ে নির্ধারিত মুনাফা','success'],['কার্দে হাসানা','বিনা সুদে ঋণ প্রদান','success'],['তাকাফুল','পারস্পরিক বীমা ব্যবস্থা','success']].map(([t,d,c]) => `
+                            <div class="timeline-item"><div class="timeline-dot ${c}"></div>
+                            <div class="timeline-content"><strong>${t}</strong><div style="font-size:0.85rem;color:var(--gray);margin-top:4px;">${d}</div></div></div>`).join('')}
+                    </div>
+                </div>
+                <div class="card" style="cursor:default;">
+                    <h4 style="color:var(--primary-dark);margin-bottom:15px;"><i class="fas fa-chart-pie"></i> সম্মতির হার</h4>
+                    ${[['মুদারাবা সঞ্চয়','৯৮%',98],['মুশারাকা বিনিয়োগ','৯৫%',95],['মুরাবাহা ফাইন্যান্স','৯৭%',97],['কার্দে হাসানা','১০০%',100]].map(([n,p,w]) => `
+                        <div style="margin-bottom:14px;">
+                            <div style="display:flex;justify-content:space-between;font-size:0.88rem;margin-bottom:5px;"><span>${n}</span><span style="color:var(--success);font-weight:600;">${p}</span></div>
+                            <div class="progress-bar"><div class="chart-bar" style="width:${w}%;"></div></div>
+                        </div>`).join('')}
+                </div>
+            </div>
+        </div>`;
+    } else {
+        container.innerHTML = `
+        <div class="dashboard-content">
+            <div class="welcome-banner">
+                <div><h2>শরীয়া পরামর্শ কেন্দ্র</h2><p>ইসলামী অর্থনীতি বিষয়ক আপনার যেকোনো প্রশ্নের উত্তর নিন</p></div>
+                <div style="font-size:4rem;opacity:0.15;"><i class="fas fa-hands-helping"></i></div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-bottom:25px;">
+                ${[['সুদ কি হারাম?','ইসলামে সুদ (রিবা) সম্পূর্ণ নিষিদ্ধ। কুরআনে স্পষ্টভাবে সুদ নিষিদ্ধ করা হয়েছে।','fas fa-ban'],['মুদারাবা কি?','লাভ-ক্ষতি অংশীদারিত্বে বিনিয়োগ। একজন পুঁজি দেয়, অন্যজন কাজ করে।','fas fa-handshake'],['মুরাবাহা কি?','ব্যাংক পণ্য ক্রয় করে নির্ধারিত মুনাফায় গ্রাহকের কাছে বিক্রি করে।','fas fa-store'],['তাকাফুল কি?','পারস্পরিক সহযোগিতার ভিত্তিতে ইসলামী বীমা পদ্ধতি।','fas fa-shield-alt']].map(([q,a,i]) => `
+                    <div class="card" style="cursor:default;">
+                        <div style="font-size:2rem;color:var(--secondary);margin-bottom:12px;"><i class="${i}"></i></div>
+                        <h4 style="color:var(--primary-dark);margin-bottom:8px;">${q}</h4>
+                        <p style="color:var(--gray);font-size:0.9rem;">${a}</p>
+                    </div>`).join('')}
+            </div>
+            <div style="text-align:center;">
+                <button class="btn btn-primary btn-lg" onclick="openShariaAdviceModal()"><i class="fas fa-comment-dots"></i> শরীয়া বিশেষজ্ঞের সাথে কথা বলুন</button>
+            </div>
+        </div>`;
+    }
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-gavel"></i> শরীয়া প্যানেল`;
+}
+
+function openShariaAdviceModal() { document.getElementById('sharia-advice-modal').classList.remove('hidden'); }
+function closeShariaAdviceModal() { document.getElementById('sharia-advice-modal').classList.add('hidden'); }
+
+function sendShariaMessage() {
+    const input = document.getElementById('sharia-chat-input');
+    const text = input.value.trim();
+    if (!text) return;
+    const chatWin = document.getElementById('sharia-chat-messages');
+    chatWin.innerHTML += `<div class="message msg-sent"><div>${text}</div><div class="message-time">${new Date().toLocaleString('bn-BD')}</div></div>`;
+    input.value = '';
+    chatWin.scrollTop = chatWin.scrollHeight;
+    setTimeout(() => {
+        const replies = {
+            'সুদ': 'ইসলামে সুদ (রিবা) সম্পূর্ণ হারাম। আল্লাহ তাআলা কুরআনে বলেছেন: "আল্লাহ ব্যবসাকে হালাল করেছেন এবং সুদকে হারাম করেছেন।" (সূরা বাকারা: ২৭৫)',
+            'মুদারাবা': 'মুদারাবা হলো লাভ-ক্ষতি অংশীদারিত্ব বিনিয়োগ পদ্ধতি। একপক্ষ মূলধন দেন এবং অন্যপক্ষ ব্যবসা পরিচালনা করেন। লাভ পূর্বনির্ধারিত হারে বণ্টিত হয়।',
+            'মুরাবাহা': 'মুরাবাহায় ব্যাংক গ্রাহকের পক্ষে পণ্য ক্রয় করে এবং ক্রয়মূল্যের সাথে নির্ধারিত মুনাফা যোগ করে গ্রাহকের কাছে বিক্রি করে। এটি সম্পূর্ণ শরীয়া সম্মত।',
+            'তাকাফুল': 'তাকাফুল হলো ইসলামী বীমা। এতে সদস্যরা পরস্পরকে সহায়তার নিয়তে চাঁদা দেন। প্রচলিত বীমার মতো সুদ বা অনিশ্চয়তা নেই।',
+            'জাকাত': 'জাকাত ইসলামের পাঁচটি স্তম্ভের একটি। নিসাব পরিমাণ সম্পদের মালিক প্রতি বছর ২.৫% জাকাত দিতে বাধ্য।',
+            'হালাল': 'ইসলামী ব্যাংকিংয়ে হালাল বিনিয়োগ নিশ্চিত করতে সকল কার্যক্রম শরীয়া সুপারভাইজরি বোর্ড দ্বারা যাচাই করা হয়।',
+        };
+        let reply = 'আপনার প্রশ্নটি শরীয়া বিশেষজ্ঞদের কাছে পাঠানো হয়েছে। সাধারণ তথ্যের জন্য: ইসলামী ব্যাংকিং সুদমুক্ত ব্যবস্থায় পরিচালিত হয় এবং সকল লেনদেন শরীয়া বোর্ড কর্তৃক অনুমোদিত।';
+        for (const [key, val] of Object.entries(replies)) {
+            if (text.includes(key)) { reply = val; break; }
+        }
+        chatWin.innerHTML += `<div class="message msg-received"><div>${reply}</div><div class="message-time">শরীয়া পরামর্শক</div></div>`;
+        chatWin.scrollTop = chatWin.scrollHeight;
+    }, 900);
+}
+
+// ========== MY ACCOUNTS ==========
+async function showMyAccounts(container) {
+    const db = await IslamicBankSystem.load();
+    const me = db.users.find(u => u.id === currentUser.id);
+    currentUser.balance = me?.balance || 0;
+    const accounts = db.applications.filter(a => a.userId === currentUser.id && a.status === 'approved');
+    const accountsHtml = accounts.map(a => {
+        const svc = db.services.find(s => s.id === a.serviceId);
+        return `<div class="service-card">
+            <div class="service-icon"><i class="${svc?.icon||'fas fa-wallet'}"></i></div>
+            <div class="service-body">
+                <div class="service-title">${a.serviceName}</div>
+                <span class="status-badge status-approved" style="margin-bottom:14px;">চলমান</span>
+                <div class="info-grid" style="margin-bottom:15px;">
+                    <div class="info-item"><div class="info-label">পরিমাণ</div><div class="info-value" style="color:var(--primary);">৳${formatMoney(a.amount)}</div></div>
+                    <div class="info-item"><div class="info-label">মেয়াদ</div><div class="info-value">${a.duration}</div></div>
+                    <div class="info-item"><div class="info-label">অনুমোদন</div><div class="info-value" style="font-size:0.82rem;">${a.approvedDate||'-'}</div></div>
+                    <div class="info-item"><div class="info-label">মুনাফা হার</div><div class="info-value" style="color:var(--success);">${svc?.profitRate||'-'}</div></div>
+                </div>
+                <button class="btn btn-outline w-100" onclick="viewApplication(${a.id})"><i class="fas fa-eye"></i> বিস্তারিত</button>
+            </div>
+        </div>`;
+    }).join('');
+    container.innerHTML = `
+        <div class="services-container">
+            <div style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:white;border-radius:var(--radius);padding:25px;margin-bottom:25px;display:flex;justify-content:space-between;align-items:center;">
+                <div><h3 style="margin-bottom:5px;">মোট বিনিয়োগ</h3><div style="font-size:2.2rem;font-weight:700;">৳${formatMoney(currentUser.balance)}</div></div>
+                <div style="text-align:right;"><div style="opacity:0.8;font-size:0.9rem;">সক্রিয় অ্যাকাউন্ট</div><div style="font-size:2.5rem;font-weight:700;">${accounts.length}</div></div>
+            </div>
+            <h2 style="margin-bottom:18px;color:var(--primary-dark);">আমার অ্যাকাউন্টসমূহ</h2>
+            <div class="services-grid">${accountsHtml||`<div style="text-align:center;padding:50px;grid-column:1/-1;"><i class="fas fa-wallet" style="font-size:3rem;color:var(--gray);opacity:0.3;display:block;margin-bottom:15px;"></i><h3 style="color:var(--gray);margin-bottom:10px;">কোন অ্যাকাউন্ট নেই</h3><button class="btn btn-primary" onclick="switchTab('apply-service')"><i class="fas fa-plus"></i> নতুন সেবা নিন</button></div>`}</div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-wallet"></i> আমার অ্যাকাউন্ট`;
+}
+
+// ========== USERS ==========
+async function showUsers(container) {
+    const db = await IslamicBankSystem.load();
+    const users = db.users.filter(u => u.type !== 'admin');
+    const rows = users.map(u => {
+        const apps = db.applications.filter(a => a.userId === u.id && a.status === 'approved').length;
+        const total = db.applications.filter(a => a.userId === u.id && a.status === 'approved').reduce((s,a) => s+a.amount, 0);
+        return `<tr>
+            <td><div style="display:flex;align-items:center;gap:10px;">
+                <div class="user-avatar" style="width:34px;height:34px;font-size:0.9rem;">${u.name.charAt(0)}</div>
+                <div><div style="font-weight:600;">${u.name}</div><div style="font-size:0.8rem;color:var(--gray);">${u.nid}</div></div>
+            </div></td>
+            <td>${u.email}</td>
+            <td>${u.phone}</td>
+            <td><span class="status-badge status-approved">${getUserTypeText(u.type)}</span></td>
+            <td style="text-align:center;">${apps}</td>
+            <td style="font-weight:600;color:var(--primary);">৳${formatMoney(total)}</td>
+            <td>${u.joined}</td>
+            <td><span class="status-badge ${u.status==='active'?'status-approved':'status-rejected'}">${u.status==='active'?'সক্রিয়':'স্থগিত'}</span></td>
+            <td><div class="action-buttons">
+                <button class="btn btn-sm btn-info" onclick="viewUserDetails('${u.id}')"><i class="fas fa-eye"></i></button>
+                <button class="btn btn-sm btn-primary" onclick="activeChatWith='${u.id}';switchTab('chat-admin')"><i class="fas fa-comment"></i></button>
+                <button class="btn btn-sm ${u.status==='active'?'btn-warning':'btn-success'}" onclick="toggleUserStatus('${u.id}')"><i class="fas fa-${u.status==='active'?'ban':'check'}"></i></button>
+            </div></td>
+        </tr>`;
+    }).join('');
+    container.innerHTML = `
+        <div class="table-container">
+            <div class="table-header"><h2>ব্যবহারকারী ব্যবস্থাপনা <span style="font-size:0.85rem;font-weight:400;color:var(--gray);">(${users.length}জন)</span></h2></div>
+            <div class="table-responsive"><table><thead><tr><th>ব্যবহারকারী</th><th>ইমেইল</th><th>ফোন</th><th>ধরন</th><th>অ্যাকাউন্ট</th><th>বিনিয়োগ</th><th>যোগদান</th><th>অবস্থা</th><th>কার্যক্রম</th></tr></thead>
+            <tbody>${rows||`<tr><td colspan="9" style="text-align:center;padding:40px;color:var(--gray);">কোন ব্যবহারকারী নেই</td></tr>`}</tbody></table></div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-users"></i> ব্যবহারকারী`;
+}
+
+async function toggleUserStatus(userId) {
+    const db = await IslamicBankSystem.load();
+    const user = db.users.find(u => u.id === userId);
+    if (!user) return;
+    user.status = user.status === 'active' ? 'suspended' : 'active';
+    await IslamicBankSystem.save(db);
+    showToast(`ব্যবহারকারী ${user.status==='active'?'সক্রিয়':'স্থগিত'} করা হয়েছে`, 'success');
+    showUsers(document.getElementById('content-area'));
+}
+
+async function viewUserDetails(userId) {
+    const db = await IslamicBankSystem.load();
+    const user = db.users.find(u => u.id === userId);
+    if (!user) return;
+    const userApps = db.applications.filter(a => a.userId === userId);
+    document.getElementById('modal-title').textContent = 'ব্যবহারকারী বিস্তারিত';
+    document.getElementById('modal-body').innerHTML = `
+        <div class="profile-header">
+            <div class="profile-avatar">${user.name.charAt(0)}</div>
+            <div><h3 style="margin-bottom:4px;">${user.name}</h3><div style="opacity:0.85;">${getUserTypeText(user.type)} গ্রাহক</div></div>
+        </div>
+        <div class="info-grid" style="margin-bottom:20px;">
+            <div class="info-item"><div class="info-label">NID নম্বর</div><div class="info-value">${user.nid}</div></div>
+            <div class="info-item"><div class="info-label">যোগদান</div><div class="info-value">${user.joined}</div></div>
+            <div class="info-item"><div class="info-label">ইমেইল</div><div class="info-value">${user.email}</div></div>
+            <div class="info-item"><div class="info-label">মোবাইল</div><div class="info-value">${user.phone}</div></div>
+            <div class="info-item"><div class="info-label">পেশা</div><div class="info-value">${user.occupation||'-'}</div></div>
+            <div class="info-item"><div class="info-label">মাসিক আয়</div><div class="info-value">৳${formatMoney(user.monthlyIncome)}</div></div>
+            <div class="info-item"><div class="info-label">ব্যালেন্স</div><div class="info-value" style="color:var(--primary);font-size:1.1rem;">৳${formatMoney(user.balance)}</div></div>
+            <div class="info-item"><div class="info-label">অবস্থা</div><div class="info-value"><span class="status-badge ${user.status==='active'?'status-approved':'status-rejected'}">${user.status==='active'?'সক্রিয়':'স্থগিত'}</span></div></div>
+        </div>
+        <div style="margin-bottom:18px;"><div class="info-label">ঠিকানা</div><div class="info-value">${user.address}</div></div>
+        <h4 style="color:var(--primary-dark);margin-bottom:12px;">আবেদনসমূহ (${userApps.length}টি)</h4>
+        ${userApps.map(a => `<div style="background:#f8f9fa;border-radius:var(--radius-sm);padding:11px 14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;"><div><div style="font-weight:600;">${a.serviceName}</div><div style="font-size:0.83rem;color:var(--gray);">৳${formatMoney(a.amount)} • ${a.duration}</div></div><span class="status-badge status-${a.status}">${{pending:'অপেক্ষমান',approved:'অনুমোদিত',rejected:'বাতিল'}[a.status]||a.status}</span></div>`).join('')||'<div style="color:var(--gray);padding:10px;">কোন আবেদন নেই</div>'}`;
+    document.getElementById('service-modal').classList.remove('hidden');
+}
+
+// ========== TRANSACTIONS ==========
+async function showTransactions(container) {
+    const db = await IslamicBankSystem.load();
+    let txns = currentUser.type === 'admin' ? db.transactions : db.transactions.filter(t => t.userId === currentUser.id);
+    txns = txns.slice().reverse();
+    const rows = txns.map(t => {
+        const u = db.users.find(u => u.id === t.userId);
+        return `<tr>
+            <td style="font-family:monospace;font-size:0.85rem;">#${t.id}</td>
+            ${currentUser.type==='admin'?`<td>${u?.name||'-'}</td>`:''}
+            <td>${t.description}</td>
+            <td style="color:${t.type==='deposit'?'var(--success)':'var(--danger)'};font-weight:700;">${t.type==='deposit'?'+':'-'}৳${formatMoney(t.amount)}</td>
+            <td>৳${formatMoney(t.balance)}</td>
+            <td style="font-size:0.85rem;">${t.date}</td>
+            <td><span class="status-badge ${t.status==='completed'?'status-approved':t.status==='pending'?'status-pending':'status-processing'}">${{completed:'সম্পন্ন',pending:'অপেক্ষমান',processing:'প্রক্রিয়াধীন'}[t.status]||t.status}</span></td>
+        </tr>`;
+    }).join('');
+
+    const totalDeposit = txns.filter(t=>t.type==='deposit').reduce((s,t)=>s+t.amount,0);
+    const totalWithdraw = txns.filter(t=>t.type==='withdrawal').reduce((s,t)=>s+t.amount,0);
+
+    container.innerHTML = `
+        <div class="table-container">
+            <div class="stats-grid" style="margin-bottom:20px;">
+                <div class="stat-card success"><div class="stat-info"><h3>৳${formatMoney(totalDeposit)}</h3><p>মোট জমা</p></div><div class="stat-icon"><i class="fas fa-arrow-down"></i></div></div>
+                <div class="stat-card warning"><div class="stat-info"><h3>৳${formatMoney(totalWithdraw)}</h3><p>মোট উত্তোলন</p></div><div class="stat-icon"><i class="fas fa-arrow-up"></i></div></div>
+                <div class="stat-card info"><div class="stat-info"><h3>${txns.length}</h3><p>মোট লেনদেন</p></div><div class="stat-icon"><i class="fas fa-exchange-alt"></i></div></div>
+            </div>
+            <div class="table-header"><h2>লেনদেন ইতিহাস</h2></div>
+            <div class="table-responsive"><table><thead><tr><th>ID</th>${currentUser.type==='admin'?'<th>গ্রাহক</th>':''}<th>বিবরণ</th><th>পরিমাণ</th><th>ব্যালেন্স</th><th>তারিখ</th><th>অবস্থা</th></tr></thead>
+            <tbody>${rows||`<tr><td colspan="${currentUser.type==='admin'?7:6}" style="text-align:center;padding:40px;color:var(--gray);">কোন লেনদেন নেই</td></tr>`}</tbody></table></div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-exchange-alt"></i> লেনদেন`;
+}
+
+// ========== REPORTS ==========
+async function showReports(container) {
+    const db = await IslamicBankSystem.load();
+    const totalUsers = db.users.filter(u=>u.type!=='admin').length;
+    const totalApps = db.applications.length;
+    const approvedApps = db.applications.filter(a=>a.status==='approved').length;
+    const rejectedApps = db.applications.filter(a=>a.status==='rejected').length;
+    const totalDeposit = db.transactions.filter(t=>t.type==='deposit').reduce((s,t)=>s+t.amount,0);
+    const typeCount = {};
+    db.applications.forEach(a => { typeCount[a.serviceName] = (typeCount[a.serviceName]||0)+1; });
+    const maxCount = Math.max(...Object.values(typeCount), 1);
+
+    container.innerHTML = `
+        <div class="dashboard-content">
+            <h2 style="color:var(--primary-dark);margin-bottom:22px;"><i class="fas fa-chart-bar"></i> রিপোর্ট ও বিশ্লেষণ</h2>
+            <div class="stats-grid" style="margin-bottom:25px;">
+                <div class="stat-card"><div class="stat-info"><h3>${totalUsers}</h3><p>মোট গ্রাহক</p></div><div class="stat-icon"><i class="fas fa-users"></i></div></div>
+                <div class="stat-card success"><div class="stat-info"><h3>৳${formatMoney(totalDeposit)}</h3><p>মোট আমানত</p></div><div class="stat-icon"><i class="fas fa-wallet"></i></div></div>
+                <div class="stat-card warning"><div class="stat-info"><h3>${approvedApps}/${totalApps}</h3><p>অনুমোদনের হার</p></div><div class="stat-icon"><i class="fas fa-chart-pie"></i></div></div>
+                <div class="stat-card info"><div class="stat-info"><h3>${db.services.length}</h3><p>সক্রিয় সেবা</p></div><div class="stat-icon"><i class="fas fa-hand-holding-usd"></i></div></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                <div class="card" style="cursor:default;">
+                    <h4 style="color:var(--primary-dark);margin-bottom:18px;"><i class="fas fa-chart-pie"></i> আবেদনের বিতরণ</h4>
+                    <div>
+                        ${[['অনুমোদিত',approvedApps,totalApps,'success'],['অপেক্ষমান',db.applications.filter(a=>a.status==='pending').length,totalApps,'warning'],['বাতিল',rejectedApps,totalApps,'danger']].map(([l,v,t,c]) => `
+                        <div style="margin-bottom:15px;">
+                            <div style="display:flex;justify-content:space-between;margin-bottom:5px;font-size:0.88rem;"><span>${l}</span><span style="color:var(--${c});font-weight:700;">${v} (${t?Math.round(v/t*100):0}%)</span></div>
+                            <div class="progress-bar"><div style="height:100%;width:${t?v/t*100:0}%;background:var(--${c});border-radius:12px;transition:width 1s;"></div></div>
+                        </div>`).join('')}
+                    </div>
+                </div>
+                <div class="card" style="cursor:default;">
+                    <h4 style="color:var(--primary-dark);margin-bottom:18px;"><i class="fas fa-list-ol"></i> সেবা অনুযায়ী আবেদন</h4>
+                    ${Object.entries(typeCount).slice(0,6).map(([n,c]) => `
+                        <div style="margin-bottom:14px;">
+                            <div style="display:flex;justify-content:space-between;font-size:0.85rem;margin-bottom:4px;"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px;">${n}</span><span style="font-weight:700;color:var(--primary);">${c}</span></div>
+                            <div class="progress-bar"><div class="chart-bar" style="width:${Math.round(c/maxCount*100)}%;"></div></div>
+                        </div>`).join('')||'<p style="color:var(--gray);">কোন ডেটা নেই</p>'}
+                </div>
+            </div>
+        </div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-chart-bar"></i> রিপোর্ট`;
+}
+
+// ========== PROFILE ==========
+async function showProfile(container) {
+    const db = await IslamicBankSystem.load();
+    const me = db.users.find(u => u.id === currentUser.id);
+    if (!me) return;
+    container.innerHTML = `
+        <div class="dashboard-content"><div style="max-width:700px;margin:0 auto;">
+            <div class="profile-header">
+                <div class="profile-avatar">${me.name.charAt(0)}</div>
+                <div><h2 style="margin-bottom:4px;">${me.name}</h2><div style="opacity:0.85;">${getUserTypeText(me.type)} • ${me.joined}</div><div style="margin-top:10px;"><span class="sharia-badge"><i class="fas fa-check"></i> যাচাইকৃত সদস্য</span></div></div>
+            </div>
+            <div class="card" style="cursor:default;margin-bottom:20px;">
+                <h4 style="color:var(--primary-dark);margin-bottom:18px;border-bottom:2px solid var(--primary-light);padding-bottom:10px;"><i class="fas fa-user"></i> ব্যক্তিগত তথ্য</h4>
+                <div class="info-grid">
+                    <div class="info-item"><div class="info-label">NID নম্বর</div><div class="info-value">${me.nid}</div></div>
+                    <div class="info-item"><div class="info-label">ইমেইল</div><div class="info-value">${me.email}</div></div>
+                    <div class="info-item"><div class="info-label">মোবাইল</div><div class="info-value">${me.phone}</div></div>
+                    <div class="info-item"><div class="info-label">পেশা</div><div class="info-value">${me.occupation||'-'}</div></div>
+                    <div class="info-item"><div class="info-label">মাসিক আয়</div><div class="info-value">৳${formatMoney(me.monthlyIncome)}</div></div>
+                    <div class="info-item"><div class="info-label">ব্যালেন্স</div><div class="info-value" style="color:var(--primary);font-size:1.1rem;">৳${formatMoney(me.balance)}</div></div>
+                </div>
+                <div class="info-item" style="margin-top:12px;"><div class="info-label">ঠিকানা</div><div class="info-value">${me.address}</div></div>
+            </div>
+            <div class="card" style="cursor:default;margin-bottom:20px;">
+                <h4 style="color:var(--primary-dark);margin-bottom:18px;border-bottom:2px solid var(--primary-light);padding-bottom:10px;"><i class="fas fa-edit"></i> তথ্য আপডেট করুন</h4>
+                <div class="form-row">
+                    <div class="form-group"><label>মোবাইল</label><input type="tel" id="edit-phone" class="form-control" value="${me.phone}"></div>
+                    <div class="form-group"><label>মাসিক আয়</label><input type="number" id="edit-income" class="form-control" value="${me.monthlyIncome}"></div>
+                </div>
+                <div class="form-group"><label>ঠিকানা</label><textarea id="edit-address" class="form-control" rows="2">${me.address}</textarea></div>
+                <button class="btn btn-primary" onclick="updateProfile()"><i class="fas fa-save"></i> আপডেট করুন</button>
+            </div>
+            <div class="card" style="cursor:default;">
+                <h4 style="color:var(--primary-dark);margin-bottom:18px;border-bottom:2px solid var(--primary-light);padding-bottom:10px;"><i class="fas fa-lock"></i> পাসওয়ার্ড পরিবর্তন</h4>
+                <div class="form-group"><label>বর্তমান পাসওয়ার্ড</label><input type="password" id="current-password" class="form-control"></div>
+                <div class="form-row">
+                    <div class="form-group"><label>নতুন পাসওয়ার্ড</label><input type="password" id="new-password" class="form-control"></div>
+                    <div class="form-group"><label>নিশ্চিত করুন</label><input type="password" id="confirm-new-password" class="form-control"></div>
+                </div>
+                <button class="btn btn-warning" onclick="updatePassword()"><i class="fas fa-key"></i> পাসওয়ার্ড পরিবর্তন করুন</button>
+            </div>
+        </div></div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-user"></i> আমার প্রোফাইল`;
+}
+
+async function updateProfile() {
+    const phone = document.getElementById('edit-phone').value.trim();
+    const income = parseInt(document.getElementById('edit-income').value) || 0;
+    const address = document.getElementById('edit-address').value.trim();
+    if (!phone || !address) { showToast('সব তথ্য পূরণ করুন', 'error'); return; }
+    const db = await IslamicBankSystem.load();
+    const user = db.users.find(u => u.id === currentUser.id);
+    if (user) { user.phone = phone; user.monthlyIncome = income; user.address = address; }
+    await IslamicBankSystem.save(db);
+    currentUser.phone = phone;
+    showToast('তথ্য আপডেট হয়েছে', 'success');
+}
+
+async function updatePassword() {
+    const cur = document.getElementById('current-password').value;
+    const nw = document.getElementById('new-password').value;
+    const cfm = document.getElementById('confirm-new-password').value;
+    if (cur !== currentUser.password) { showToast('বর্তমান পাসওয়ার্ড সঠিক নয়', 'error'); return; }
+    if (nw !== cfm) { showToast('নতুন পাসওয়ার্ড মিলছে না', 'error'); return; }
+    if (nw.length < 8) { showToast('পাসওয়ার্ড কমপক্ষে ৮ অক্ষর হতে হবে', 'error'); return; }
+    const db = await IslamicBankSystem.load();
+    const user = db.users.find(u => u.id === currentUser.id);
+    if (user) { user.password = nw; }
+    await IslamicBankSystem.save(db);
+    currentUser.password = nw;
+    document.getElementById('current-password').value = '';
+    document.getElementById('new-password').value = '';
+    document.getElementById('confirm-new-password').value = '';
+    showToast('পাসওয়ার্ড পরিবর্তন হয়েছে', 'success');
+}
+
+// ========== SETTINGS ==========
+async function showSettings(container) {
+    const db = await IslamicBankSystem.load();
+    const s = db.settings;
+    container.innerHTML = `
+        <div class="dashboard-content"><div style="max-width:750px;margin:0 auto;">
+            <h2 style="color:var(--primary-dark);margin-bottom:22px;"><i class="fas fa-cog"></i> সিস্টেম সেটিংস</h2>
+            <div class="card" style="cursor:default;margin-bottom:20px;">
+                <h3 style="color:var(--primary-dark);margin-bottom:18px;border-bottom:2px solid var(--primary-light);padding-bottom:10px;"><i class="fas fa-building"></i> ব্যাংক তথ্য</h3>
+                <div class="form-group"><label>ব্যাংকের নাম</label><input type="text" id="bank-name" class="form-control" value="${s.bankName}"></div>
+                <div class="form-row">
+                    <div class="form-group"><label>সাপোর্ট ইমেইল</label><input type="email" id="support-email" class="form-control" value="${s.supportEmail}"></div>
+                    <div class="form-group"><label>যোগাযোগ নম্বর</label><input type="text" id="contact-number" class="form-control" value="${s.contactNumber}"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group"><label>কাজের সময়</label><input type="text" id="working-hours" class="form-control" value="${s.workingHours}"></div>
+                    <div class="form-group"><label>নামাযের বিরতি</label><input type="text" id="prayer-break" class="form-control" value="${s.prayerBreak}"></div>
+                </div>
+                <div class="form-group"><label>ঠিকানা</label><textarea id="bank-address" class="form-control" rows="2">${s.address}</textarea></div>
+            </div>
+            <div class="card" style="cursor:default;margin-bottom:20px;">
+                <h3 style="color:var(--primary-dark);margin-bottom:18px;border-bottom:2px solid var(--primary-light);padding-bottom:10px;"><i class="fas fa-shield-alt"></i> নিরাপত্তা সেটিংস</h3>
+                <div class="form-row">
+                    <div class="form-group"><label>সেশন টাইমআউট (মিনিট)</label><input type="number" id="session-timeout" class="form-control" value="30" min="5" max="120"></div>
+                    <div class="form-group"><label>সর্বোচ্চ লগইন প্রচেষ্টা</label><input type="number" id="max-login" class="form-control" value="5" min="1" max="10"></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px;">
+                    ${[['enable-captcha','ক্যাপচা সক্ষম',true],['enable-2fa','২-ফ্যাক্টর অথেনটিকেশন',false],['enable-logging','লগিং সক্ষম',true]].map(([id,label,checked]) => `
+                    <label style="display:flex;align-items:center;gap:10px;cursor:pointer;padding:10px;background:#f8f9fa;border-radius:var(--radius-sm);">
+                        <input type="checkbox" id="${id}" ${checked?'checked':''} style="width:16px;height:16px;">
+                        <span>${label}</span>
+                    </label>`).join('')}
+                </div>
+            </div>
+            <div class="card" style="cursor:default;margin-bottom:20px;">
+                <h3 style="color:var(--primary-dark);margin-bottom:18px;border-bottom:2px solid var(--primary-light);padding-bottom:10px;"><i class="fas fa-database"></i> ডেটা ব্যবস্থাপনা</h3>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                    <button class="btn btn-info" onclick="exportData()"><i class="fas fa-download"></i> ডেটা এক্সপোর্ট</button>
+                    <button class="btn btn-danger" onclick="clearOldData()"><i class="fas fa-trash"></i> পুরানো ডেটা মুছুন</button>
+                </div>
+            </div>
+            <div style="text-align:center;">
+                <button class="btn btn-primary btn-lg" onclick="saveSettings()"><i class="fas fa-save"></i> সেটিংস সংরক্ষণ করুন</button>
+            </div>
+        </div></div>`;
+    document.getElementById('page-title').innerHTML = `<i class="fas fa-cog"></i> সেটিংস`;
+}
+
+async function saveSettings() {
+    const db = await IslamicBankSystem.load();
+    db.settings.bankName = document.getElementById('bank-name').value;
+    db.settings.supportEmail = document.getElementById('support-email').value;
+    db.settings.contactNumber = document.getElementById('contact-number').value;
+    db.settings.workingHours = document.getElementById('working-hours').value;
+    db.settings.prayerBreak = document.getElementById('prayer-break').value;
+    db.settings.address = document.getElementById('bank-address').value;
+    await IslamicBankSystem.save(db);
+    showToast('সেটিংস সংরক্ষণ হয়েছে', 'success');
+}
+
+function exportData() {
+    if (!dbCache) return;
+    const json = JSON.stringify(dbCache, null, 2);
+    const blob = new Blob([json], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = `nur_bank_backup_${Date.now()}.json`;
+    a.click(); URL.revokeObjectURL(url);
+    showToast('ডেটা এক্সপোর্ট সফল', 'success');
+}
+
+async function clearOldData() {
+    if (!confirm('পুরানো নোটিফিকেশন এবং রিড মেসেজ মুছে ফেলবেন?')) return;
+    const db = await IslamicBankSystem.load();
+    const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    db.notifications = db.notifications.filter(n => !n.read || n.id > thirtyDaysAgo);
+    db.messages = db.messages.filter(m => !m.read || m.id > thirtyDaysAgo);
+    await IslamicBankSystem.save(db);
+    showToast('পুরানো ডেটা পরিষ্কার করা হয়েছে', 'success');
+}
+
+// ========== NOTIFICATIONS ==========
+function toggleNotifications() {
+    const panel = document.getElementById('notifications-panel');
+    panel.classList.toggle('show');
+    if (panel.classList.contains('show')) loadNotifications();
+}
+
+async function loadNotifications() {
+    const db = await IslamicBankSystem.load();
+    const notifs = db.notifications.filter(n => n.userId === currentUser.id).sort((a,b) => b.id - a.id);
+    const icons = { application:'fas fa-file-alt', message:'fas fa-comment', success:'fas fa-check-circle', error:'fas fa-exclamation-circle', registration:'fas fa-user-plus', info:'fas fa-info-circle' };
+    const colors = { application:'var(--info)', message:'var(--success)', success:'var(--success)', error:'var(--danger)', registration:'var(--secondary)', info:'var(--primary)' };
+    document.getElementById('notifications-list').innerHTML = notifs.length ? notifs.map(n => `
+        <div class="notification-item ${n.read?'':'unread'}" onclick="openNotification(${n.id})">
+            ${!n.read?'<div class="notification-dot"></div>':''}
+            <div style="color:${colors[n.type]||'var(--primary)'};font-size:1.1rem;margin-top:2px;"><i class="${icons[n.type]||'fas fa-bell'}"></i></div>
+            <div class="notification-content">
+                <div class="notification-title">${n.title}</div>
+                <div class="notification-message">${n.message}</div>
+                <div class="notification-time">${n.timestamp}</div>
+            </div>
+        </div>`).join('') : '<div style="padding:35px;text-align:center;color:var(--gray);"><i class="fas fa-bell-slash" style="font-size:2rem;opacity:0.4;display:block;margin-bottom:10px;"></i>কোন নোটিফিকেশন নেই</div>';
+}
+
+async function openNotification(notifId) {
+    const db = await IslamicBankSystem.load();
+    const notif = db.notifications.find(n => n.id == notifId);
+    if (notif) {
+        notif.read = true;
+        await IslamicBankSystem.save(db);
+        document.getElementById('notifications-panel').classList.remove('show');
+        updateNotificationCount();
+        if (notif.type === 'application') switchTab(currentUser.type==='admin'?'applications':'my-applications');
+        else if (notif.type === 'message') switchTab(currentUser.type==='admin'?'chat-admin':'chat-user');
+    }
+}
+
+async function markAllNotificationsRead() {
+    const db = await IslamicBankSystem.load();
+    db.notifications.filter(n => n.userId === currentUser.id).forEach(n => n.read = true);
+    await IslamicBankSystem.save(db);
+    updateNotificationCount();
+    loadNotifications();
+}
+
+async function updateNotificationCount() {
+    if (!currentUser) return;
+    const db = await IslamicBankSystem.load();
+    const count = db.notifications.filter(n => n.userId === currentUser.id && !n.read).length;
+    const badge = document.getElementById('notification-badge');
+    if (badge) { badge.textContent = count; count > 0 ? badge.classList.remove('hidden') : badge.classList.add('hidden'); }
+}
+
+// ========== CALCULATOR ==========
+function calculateProfit() {
+    const amount = parseFloat(document.getElementById('calc-amount').value);
+    const rate = parseFloat(document.getElementById('calc-rate').value) / 100;
+    const years = parseFloat(document.getElementById('calc-years').value);
+    const type = document.getElementById('calc-type').value;
+    const res = document.getElementById('calc-result');
+    if (!amount || !rate || !years) { res.style.display = 'none'; return; }
+    let total, profit;
+    if (type === 'simple') { profit = amount * rate * years; total = amount + profit; }
+    else { total = amount * Math.pow(1 + rate, years); profit = total - amount; }
+    document.getElementById('calc-principal').textContent = '৳' + formatMoney(Math.round(amount));
+    document.getElementById('calc-profit').textContent = '৳' + formatMoney(Math.round(profit));
+    document.getElementById('calc-total').textContent = '৳' + formatMoney(Math.round(total));
+    res.style.display = 'block';
+}
+
+// ========== MISC ==========
+function closeModal() { document.getElementById('service-modal').classList.add('hidden'); }
+function toggleSidebar() { document.getElementById('sidebar').classList.toggle('open'); }
+
+// ========== INIT ==========
+document.addEventListener('DOMContentLoaded', async () => {
+    generateCaptcha();
+
+    // Load DB first
+    await IslamicBankSystem.load();
+
+    // Check session
+    const savedUser = sessionStorage.getItem('currentUser');
+    if (savedUser) {
+        try {
+            const u = JSON.parse(savedUser);
+            // Re-verify user still exists
+            const dbUser = IslamicBankSystem.findUser(u.id);
+            if (dbUser && dbUser.status !== 'suspended') {
+                currentUser = {...dbUser};
+                sessionStorage.setItem('currentUser', JSON.stringify(currentUser));
+            }
+        } catch(e) { sessionStorage.removeItem('currentUser'); }
+    }
+
+    // Hide loading, show app
+    setTimeout(() => {
+        const overlay = document.getElementById('loading-overlay');
+        overlay.style.transition = 'opacity 0.5s';
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.classList.add('hidden');
+            if (currentUser) {
+                loadDashboard();
+            } else {
+                document.getElementById('auth-section').classList.remove('hidden');
+            }
+        }, 500);
+    }, 1800);
+
+    // Outside click handlers
+    document.addEventListener('click', e => {
+        const panel = document.getElementById('notifications-panel');
+        const btn = document.querySelector('.notification-btn');
+        if (panel && panel.classList.contains('show') && !panel.contains(e.target) && btn && !btn.contains(e.target))
+            panel.classList.remove('show');
+        const sidebar = document.getElementById('sidebar');
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        if (sidebar && sidebar.classList.contains('open') && !sidebar.contains(e.target) && mobileBtn && !mobileBtn.contains(e.target))
+            sidebar.classList.remove('open');
+    });
+});
+</script>
+
+<script>
+// ============================================================
+// PWA + Offline Support
+// ============================================================
+
+// Override window.storage to use localStorage (guaranteed to work offline)
+if (!window.storage) {
+    const DB_KEY = 'nur_islamic_bank_v3';
+    window.storage = {
+        get: function(key, shared) {
+            return new Promise(function(resolve, reject) {
+                try {
+                    var val = localStorage.getItem(key);
+                    if (val !== null) {
+                        resolve({key: key, value: val, shared: !!shared});
+                    } else {
+                        reject(new Error('Key not found: ' + key));
+                    }
+                } catch(e) { reject(e); }
+            });
+        },
+        set: function(key, value, shared) {
+            return new Promise(function(resolve, reject) {
+                try {
+                    localStorage.setItem(key, value);
+                    resolve({key: key, value: value, shared: !!shared});
+                } catch(e) { reject(e); }
+            });
+        },
+        delete: function(key, shared) {
+            return new Promise(function(resolve, reject) {
+                try {
+                    localStorage.removeItem(key);
+                    resolve({key: key, deleted: true});
+                } catch(e) { reject(e); }
+            });
+        },
+        list: function(prefix, shared) {
+            return new Promise(function(resolve, reject) {
+                try {
+                    var keys = [];
+                    for (var i = 0; i < localStorage.length; i++) {
+                        var k = localStorage.key(i);
+                        if (!prefix || k.startsWith(prefix)) keys.push(k);
+                    }
+                    resolve({keys: keys, shared: !!shared});
+                } catch(e) { reject(e); }
+            });
+        }
+    };
+}
+
+// PWA Install prompt
+var deferredPrompt;
+window.addEventListener('beforeinstallprompt', function(e) {
+    e.preventDefault();
+    deferredPrompt = e;
+    showInstallBanner();
+});
+
+function showInstallBanner() {
+    if (document.getElementById('pwa-banner')) return;
+    if (window.matchMedia('(display-mode: standalone)').matches) return;
+    
+    var banner = document.createElement('div');
+    banner.id = 'pwa-banner';
+    banner.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#1a472a,#0d2e1a);color:white;padding:12px 20px;border-radius:50px;display:flex;align-items:center;gap:10px;z-index:99999;box-shadow:0 8px 25px rgba(0,0,0,0.4);animation:slideUp 0.5s ease;cursor:pointer;white-space:nowrap;';
+    banner.innerHTML = '<span style="font-size:1.3rem">📱</span><span style="font-size:0.9rem;font-weight:600">অ্যাপ হিসেবে ইন্সটল করুন</span><button onclick="installApp()" style="background:#d4af37;color:#333;border:none;padding:7px 16px;border-radius:25px;font-weight:700;cursor:pointer;font-size:0.85rem;margin-left:5px;">ইন্সটল</button><button onclick="document.getElementById('pwa-banner').remove()" style="background:transparent;border:none;color:rgba(255,255,255,0.6);cursor:pointer;font-size:1.1rem;padding:0 4px;">✕</button>';
+    
+    var style = document.createElement('style');
+    style.textContent = '@keyframes slideUp{from{transform:translateX(-50%) translateY(100px);opacity:0}to{transform:translateX(-50%) translateY(0);opacity:1}}';
+    document.head.appendChild(style);
+    document.body.appendChild(banner);
+    setTimeout(function() { var b=document.getElementById('pwa-banner'); if(b) b.remove(); }, 10000);
+}
+
+async function installApp() {
+    if (deferredPrompt) {
+        deferredPrompt.prompt();
+        await deferredPrompt.userChoice;
+        deferredPrompt = null;
+    } else {
+        alert('হোম স্ক্রিনে যোগ করুন:\n\n1. Chrome মেনু (⋮) খুলুন\n2. "Add to Home screen" বা "হোম স্ক্রিনে যোগ করুন" চাপুন\n3. "Add" চাপুন\n\nঅ্যাপটি হোম স্ক্রিনে ইন্সটল হয়ে যাবে!');
+    }
+    var b = document.getElementById('pwa-banner');
+    if (b) b.remove();
+}
+
+// Prevent zoom on double tap (app-like)
+var lastTouchEnd = 0;
+document.addEventListener('touchend', function(e) {
+    var now = Date.now();
+    if (now - lastTouchEnd <= 300) e.preventDefault();
+    lastTouchEnd = now;
+}, false);
+
+// Show install banner after 3 seconds
+setTimeout(function() {
+    if (!window.matchMedia('(display-mode: standalone)').matches) {
+        showInstallBanner();
+    }
+}, 3000);
+</script>
+
+</body>
+</html>
